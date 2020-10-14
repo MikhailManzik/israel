@@ -1,0 +1,47 @@
+.intro {
+  min-height: 906px;
+  padding-top: 32px;
+  text-align: center;
+  background-image: url("../img/bg-head-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-head-desktop@2x.png");
+  }
+}
+
+.intro p {
+  width: 434px;
+  color: $color-white;
+  font-family: $font-firasans;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.intro__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro__button {
+  width: 76px;
+  height: 131px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/scroll-down-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  cursor: pointer;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/scroll-down-desktop@2x.png");
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

@@ -14,6 +14,28 @@
   <link rel="preload" href="fonts/raleway-v18-latin_cyrillic-800.woff2" as="font" type="font/woff2" crossorigin="">
 </head>
 <body>
-  <h1>Добро пожаловать</h1>
+  <div class="intro">
+    <header class="header container">
+      <a class="header__phone" href="tel:+97226216581">+ (972) 2 – 621 – 6581</a>
+      <a class="header__logo">
+        <picture>
+          <!-- 1х: 120px; 2x: 240px -->
+          <source type="image/webp" media="(max-width:767px)"
+          srcset="img/logo-mobile@1x.webp 1x, img/logo-mobile@2x.webp 2x">
+          <!-- 1х: 137px; 2x: 274px -->
+          <source type="image/webp" srcset="img/logo-desktop@1x.webp 1x, img/logo-desktop@2x.webp 2x">
+          <img src="img/logo-desktop@1x.png" srcset="img/logo-desktop@2x.png 2x"
+            width="137" height="48" alt="Пингвины.">
+        </picture>
+      </a>
+      <a class="header__call-back" href="#">Заказать звонок</a>
+    </header>
+    <div class="intro__bottom container">
+      <p>Учёба, путешествие и карьера для еврейской молодёжи</p>
+      <button class="intro__button">
+        <span class="visually-hidden">Кнопка вниз</span>
+      </button>
+    </div>
+  </div>
 </body>
 </html>
