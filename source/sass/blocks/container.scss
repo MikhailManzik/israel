@@ -3,3 +3,10 @@
   margin: 0 auto;
   padding: 0 112px;
 }
+
+@media (max-width: $mobile-width) {
+  .container {
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+}

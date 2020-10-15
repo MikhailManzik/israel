@@ -1,15 +1,8 @@
 .intro {
-  min-height: 906px;
-  padding-top: 32px;
-  text-align: center;
-  background-image: url("../img/bg-head-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-head-desktop@2x.png");
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 406px;
 }
 
 .intro p {
@@ -17,13 +10,8 @@
   color: $color-white;
   font-family: $font-firasans;
   font-size: 24px;
+  line-height: 28.8px;
   font-weight: 700;
-}
-
-.intro__bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .intro__button {
@@ -43,5 +31,13 @@
 
   &:hover {
     transform: scale(1.1);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .intro p {
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
   }
 }

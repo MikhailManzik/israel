@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 458px;
+  padding: 32px 0;
 }
 
 .header__phone,
@@ -10,8 +10,10 @@
   border-bottom: 1px solid transparent;
   color: $color-black;
   text-decoration: none;
+  text-transform: uppercase;
   font-family: $font-firasans;
   font-size: 15px;
+  line-height: 18px;
   font-weight: 500;
   transition: 0.5s;
 
@@ -26,4 +28,25 @@
 
 .header__call-back {
   border-bottom: 1px dashed $color-black;
+}
+
+@media (max-width: $mobile-width) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header__phone {
+    margin-bottom: 4px;
+  }
+
+  .header__phone,
+  .header__call-back {
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  .header__logo {
+    display: none;
+  }
 }
