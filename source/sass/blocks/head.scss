@@ -4,7 +4,7 @@
   background-image: url("../img/bg-head-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: contain;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-head-desktop@2x.png");
