@@ -3,8 +3,8 @@
   text-align: center;
   background-image: url("../img/bg-head-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
+  background-position: top;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-head-desktop@2x.png");
@@ -13,7 +13,9 @@
 
 @media (max-width: $mobile-width) {
   .head {
+    min-height: 605px;
     background-image: url("../img/bg-head-mobile@1x.png");
+    background-size: contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-head-mobile@2x.png");
