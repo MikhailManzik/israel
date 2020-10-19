@@ -1,0 +1,36 @@
+.programs {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -78px;
+    width: 680px;
+    height: 420px;
+    background-image: url("../img/bg-sketch-programs-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-sketch-programs-desktop@1x.png");
+    }
+  }
+}
+
+.programs h2 {
+  margin: 0;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  color: $color-blue;
+  font-family: $font-montserrat;
+  font-size: 40px;
+  line-height: 48.76px;
+  font-weight: 700;
+  letter-spacing: -2%;
+}
+
+.programs__tabs {
+  display: flex;
+}

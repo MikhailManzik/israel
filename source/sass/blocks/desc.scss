@@ -1,0 +1,21 @@
+.desc {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.desc__pane h3 {
+  color: $color-blue;
+  font-family: $font-montserrat;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  letter-spacing: 2%;
+}
+
+.desc__pane p {
+  color: $color-black;
+  font-family: $font-firasans;
+  font-size: 15px;
+  line-height: 25.5px;
+}
