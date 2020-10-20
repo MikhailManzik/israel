@@ -39,3 +39,49 @@
 .programs__tabs {
   display: flex;
 }
+
+
+@media (max-width: $desktop-width-1125) {
+  .programs__wrapper {
+    padding-left: 112px;
+    padding-right: 112px;
+  }
+}
+
+@media (max-width: $desktop-width-960) {
+  .programs__wrapper {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .programs {
+    overflow: hidden;
+
+    &::before {
+      width: 296px;
+      height: 201px;
+      background-image: url("../img/bg-sketch-programs-mobile@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-sketch-programs-mobile@2x.png");
+      }
+    }
+  }
+
+  .programs__wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .programs h2 {
+    text-align: center;
+  }
+
+  .programs__tabs {
+    flex-direction: column;
+  }
+}
+
+

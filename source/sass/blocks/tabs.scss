@@ -212,3 +212,11 @@
     color: $color-white;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .tabs__list {
+    display: flex;
+    overflow-x: scroll;
+    width: 100vw;
+  }
+}
