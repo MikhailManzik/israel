@@ -218,5 +218,18 @@
     display: flex;
     overflow-x: scroll;
     width: 100vw;
+    margin-left: -16px;
+  }
+
+  .tabs__button--active {
+    border-radius: 50px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .tabs__button:not(.tabs__button--active) {
+    opacity: 0.5;
   }
 }
