@@ -14,9 +14,14 @@
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-sketch-programs-desktop@1x.png");
+      background-image: url("../img/bg-sketch-programs-desktop@2x.png");
     }
   }
+}
+
+.programs__wrapper {
+  padding-left: 212px;
+  padding-right: 270px;
 }
 
 .programs h2 {
