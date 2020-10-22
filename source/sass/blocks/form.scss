@@ -1,0 +1,15 @@
+.form__wrapper input {
+  padding: 20px;
+  color: $color-black;
+  font-family: $font-firasans;
+  font-size: 17px;
+  line-height: 20.4px;
+  border: 2px solid #e3e3e3;
+  border-radius: 80px;
+
+  &:focus {
+    outline: 0;
+    border: 2px solid #ffc341;
+  }
+
+}

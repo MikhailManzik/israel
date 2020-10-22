@@ -1,5 +1,6 @@
 .programs {
   position: relative;
+  margin-bottom: 240px;
 
   &::before {
     content: "";
@@ -25,15 +26,9 @@
 }
 
 .programs h2 {
+  @include title-desktop;
   margin: 0;
   margin-bottom: 24px;
-  text-transform: uppercase;
-  color: $color-blue;
-  font-family: $font-montserrat;
-  font-size: 40px;
-  line-height: 48.76px;
-  font-weight: 700;
-  letter-spacing: -2%;
 }
 
 .programs__tabs {
@@ -60,6 +55,7 @@
     overflow: hidden;
 
     &::before {
+      top: 170px;
       width: 296px;
       height: 201px;
       background-image: url("../img/bg-sketch-programs-mobile@1x.png");
@@ -76,9 +72,8 @@
   }
 
   .programs h2 {
+    @include title-mobile;
     text-align: center;
-    font-size: 32px;
-    line-height: 39.01px;
   }
 
   .programs__tabs {
