@@ -126,11 +126,20 @@
       <form class="callback__form form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="form__wrapper">
           <label>
-            <input type="tel" name="phone" placeholder="Телефон">
+            <input type="tel" name="phone" placeholder="Телефон" required>
           </label>
           <button type="submit">Перезвонить мне</button>
         </div>
       </form>
+      <picture>
+        <!-- 1х: 320px; 2x: 640px -->
+        <source type="image/webp" media="(max-width:767px)"
+        srcset="img/bg-girl-flag-mobile@1x.webp 1x, img/bg-girl-flag-mobile@2x.webp 2x">
+        <!-- 1х: 818px; 2x: 1636px -->
+        <source type="image/webp" srcset="img/bg-girl-flag-desktop@1x.webp 1x, img/bg-girl-flag-desktop@2x.webp 2x">
+        <img src="img/bg-girl-flag-desktop@1x.png" srcset="img/bg-girl-flag-desktop@2x.png 2x"
+          width="818" height="594" alt="Девушка с флоагом Израиля.">
+      </picture>
     </div>
   </section>
 </body>

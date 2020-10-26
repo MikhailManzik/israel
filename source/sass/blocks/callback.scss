@@ -16,22 +16,6 @@
       background-image: url("../img/bg-backpack-desktop@2x.png");
     }
   }
-
-  &::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    right: 0;
-    top: -240px;
-    width: 818px;
-    height: 594px;
-    background-image: url("../img/bg-girl-flag-desktop@1x.png");
-    background-size: contain;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-girl-flag-desktop@2x.png");
-    }
-  }
 }
 
 .callback__wrapper h2 {
@@ -48,4 +32,42 @@
   font-family: $font-firasans;
   font-size: 17px;
   line-height: 28.9px;
+}
+
+.callback__wrapper img {
+  z-index: -1;
+  position: absolute;
+  top: -212px;
+  right: 0;
+}
+
+@media (max-width: $mobile-width) {
+  .callback {
+    padding: 0 16px;
+
+    &::before {
+      width: 103px;
+      height: 188px;
+      background-image: url("../img/bg-backpack-mobile@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-backpack-mobile@2x.png");
+      }
+    }
+  }
+
+  .callback__wrapper h2 {
+    @include title-mobile;
+  }
+
+  .callback__wrapper p {
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+
+  .callback__wrapper img {
+    top: 300px;
+  }
 }

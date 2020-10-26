@@ -1,4 +1,12 @@
+.form__wrapper {
+  position: relative;
+  width: 477px;
+}
+
 .form__wrapper input {
+  box-sizing: border-box;
+
+  width: 100%;
   padding: 20px;
   color: $color-black;
   font-family: $font-firasans;
@@ -9,7 +17,49 @@
 
   &:focus {
     outline: 0;
-    border: 2px solid #ffc341;
+    border: 2px solid $color-black;
   }
 
+  &:focus:required:invalid {
+    border: 2px solid $color-red;
+  }
+}
+
+.form__wrapper button {
+  position: absolute;
+  right: 0;
+  padding: 22px 40px;
+  color: $color-white;
+  font-family: $font-firasans;
+  font-size: 17px;
+  line-height: 20.4px;
+  border: none;
+  border-radius: 80px;
+  background: $ln-gd-yellow;
+  cursor: pointer;
+
+  &:hover {
+    background: $ln-gd-yellow-hover;
+  }
+
+  &:active {
+    background: $ln-gd-yellow-click;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form__wrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form__wrapper input {
+    margin-bottom: 8px;
+  }
+
+  .form__wrapper button {
+    position: static;
+    padding-right: 64px;
+    padding-left: 64px;
+  }
 }
