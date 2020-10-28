@@ -1,7 +1,6 @@
 .callback {
   position: relative;
   padding: 0 210px;
-  margin-bottom: 322px;
 
   &::before {
     content: "";
@@ -69,6 +68,6 @@
   }
 
   .callback__wrapper img {
-    top: 300px;
+    position: static;
   }
 }
