@@ -1,0 +1,15 @@
+.advantages__wrapper {
+  padding-left: 170px;
+  padding-right: 36px;
+}
+
+.advantages__wrapper h2 {
+  @include title-desktop;
+}
+
+.advantages__wrapper p {
+  font-family: $font-firasans;
+  font-size: 17px;
+  line-height: 28.9px;
+  opacity: 0.87;
+}

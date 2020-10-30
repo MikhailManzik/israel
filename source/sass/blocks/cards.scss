@@ -1,0 +1,25 @@
+.cards {
+  display: flex;
+}
+
+.cards__big {
+  width: 45%;
+}
+
+.cards__photo {
+  position: relative;
+}
+
+.cards__photo span {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+  font-family: $font-raleway;
+  color: $color-white;
+}
+
+.cards__small {
+  display: flex;
+  flex-wrap: wrap;
+  width: 55%;
+}
