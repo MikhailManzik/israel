@@ -1,13 +1,20 @@
 .advantages__wrapper {
+  max-width: 1152px;
+  margin: 0 auto;
   padding-left: 170px;
   padding-right: 36px;
 }
 
-.advantages__wrapper h2 {
+.advantages__text {
+  text-align: center;
+}
+
+.advantages__text h2 {
   @include title-desktop;
 }
 
-.advantages__wrapper p {
+.advantages__text p {
+  padding: 0 215px;
   font-family: $font-firasans;
   font-size: 17px;
   line-height: 28.9px;

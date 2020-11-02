@@ -1,25 +1,53 @@
 .cards {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.cards__big {
-  width: 45%;
+.cards__left {
+  width: calc(100% - 670px);
+}
+
+.cards__right {
+  display: flex;
+  flex-wrap: wrap;
+  width: 55%;
+  padding-top: 65px;
 }
 
 .cards__photo {
   position: relative;
 }
 
-.cards__photo span {
+.cards__photo--middle {
+  width: 65%;
+}
+
+.cards__photo--small {
+  width: 35%;
+}
+
+.cards__desc {
   position: absolute;
   left: 32px;
   bottom: 32px;
-  font-family: $font-raleway;
+  width: 360px;
   color: $color-white;
+  font-family: $font-raleway;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 24.65px;
 }
 
-.cards__small {
-  display: flex;
-  flex-wrap: wrap;
-  width: 55%;
+.cards__desc--big {
+  left: 40px;
+}
+
+.cards__desc--middle {
+  bottom: 35px;
+  width: 360px;
+}
+
+.cards__desc--small {
+  bottom: 35px;
+  width: 120px;
 }
