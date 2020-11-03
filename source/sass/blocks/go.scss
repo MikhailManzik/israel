@@ -1,11 +1,12 @@
 .go {
   position: relative;
   padding-top: 322px;
+  padding-bottom: 320px;
   text-align: center;
   background-image: url("../img/bg-watercolor-how-to-go-desktop@1x.png"), url("../img/stamp-desktop@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 0 110px, right 510px;
-  background-size: cover, 216px 254px;
+  background-size: contain, 216px 254px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-watercolor-how-to-go-desktop@2x.png"), url("../img/stamp-desktop@2x.png");
