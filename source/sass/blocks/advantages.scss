@@ -72,6 +72,17 @@
 
 @media (max-width: $mobile-width) {
   .advantages {
+    margin-top: 0;
     background: none;
+  }
+
+  .advantages__text h2 {
+    @include title-mobile;
+  }
+
+  .advantages__text p {
+    padding-right: 12px;
+    text-align: left;
+    font-size: 16px;
   }
 }

@@ -143,11 +143,28 @@
 }
 
 @media (max-width: $mobile-width) {
+  .cards__photo {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
   .cards__photo--hidden {
     display: none;
   }
 
   .cards__photo--active {
     display: block;
+  }
+
+  .cards__desc {
+    position: static;
+    display: block;
+    max-width: 225px;
+    margin: 0 auto;
+    margin-top: -94px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
   }
 }
