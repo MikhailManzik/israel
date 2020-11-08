@@ -1,9 +1,10 @@
 .advantages {
   margin-top: -150px;
+  padding-bottom: 160px;
   background-image: url("../img/bg-watercolor-life-desktop@1x.png"), url("../img/compass-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: 0 -35px, right 618px;
-  background-size: cover, 90px 148px;
+  background-size: contain, 90px 148px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-watercolor-life-desktop@2x.png"), url("../img/compass-desktop@2x.png");
@@ -74,15 +75,11 @@
   .advantages {
     margin-top: 0;
     background: none;
+    padding-bottom: 60px;
   }
 
-  .advantages__text h2 {
-    @include title-mobile;
-  }
-
-  .advantages__text p {
-    padding-right: 12px;
-    text-align: left;
-    font-size: 16px;
+  .advantages__text {
+    left: 0;
+    right: 0;
   }
 }

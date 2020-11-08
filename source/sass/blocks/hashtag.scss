@@ -1,0 +1,113 @@
+.hashtag {
+  display: flex;
+  padding-bottom: 196px;
+  background-image: url("../img/people1-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/people1-desktop@2x.png");
+  }
+}
+
+.hashtag__text {
+  margin-left: auto;
+  margin-right: 167px;
+  margin-top: 120px;
+}
+
+.hashtag__text h2 {
+  @include title-desktop;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.hashtag__text p {
+  width: 390px;
+  margin: 0;
+  margin-bottom: 48px;
+  color: $color-white;
+  font-family: $font-firasans;
+  font-size: 17px;
+  line-height: 29px;
+  opacity: 0.87;
+}
+
+.hashtag__button {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 22px 40px;
+  padding-left: 72px;
+  color: $color-white;
+  font-family: $font-firasans;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 80px;
+  background: $ln-gd-yellow;
+  cursor: pointer;
+
+  &:hover {
+    background: $ln-gd-yellow-hover;
+  }
+
+  &:active {
+    background: $ln-gd-yellow-click;
+  }
+}
+
+.hashtag__icon {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+@media (max-width: $tablet-width) {
+  .hashtag__text {
+    margin-right: 70px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .hashtag {
+    padding-bottom: 20px;
+    background-image: url("../img/people1-mobile@1x.png");
+    background-size: 100%;
+    background-position: 0 40px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/people1-mobile@2x.png");
+    }
+  }
+
+  .hashtag__text {
+    max-width: 100%;
+    margin: 0 16px;
+    text-align: center;
+  }
+
+  .hashtag__text h2 {
+    @include title-mobile;
+    margin-bottom: 90px;
+    font-size: 38px;
+  }
+
+  .hashtag__text p {
+    width: 100%;
+    text-align: left;
+  }
+
+  .hashtag__button {
+    padding-left: 89px;
+    padding-right: 57px;
+  }
+
+  .hashtag__icon {
+    left: 56px;
+  }
+}
