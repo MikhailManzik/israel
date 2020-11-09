@@ -1,0 +1,70 @@
+.feedbacks h2 {
+  @include title-desktop;
+  margin: 0;
+  text-align: center;
+}
+
+.feedbacks__wrapper {
+  padding-left: 98px;
+  padding-right: 196px;
+}
+
+.feedbacks__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feedbacks__item {
+  display: flex;
+}
+
+.feedbacks__text {
+  width: 60%;
+  margin-left: 40px;
+  padding-top: 60px;
+}
+
+.feedbacks__text h3 {
+  margin: 0;
+  font-family: $font-firasans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: $color-black;
+  opacity: 0.74;
+}
+
+.feedbacks__program {
+  display: flex;
+  margin: 0;
+  font-family: $font-firasans;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.feedbacks__program dt{
+  margin: 0;
+  color: $color-blue;
+}
+
+.feedbacks__program dd{
+  margin: 0;
+  color: $color-black;
+  opacity: 0.74;
+}
+
+.feedbacks__text p {
+  font-family: $font-firasans;
+  font-size: 17px;
+  line-height: 28.9px;
+  color: $color-black;
+  opacity: 0.74;
+}
+
+.feedbacks__link {
+  font-family: $font-firasans;
+  font-size: 15px;
+  line-height: 21px;
+  color: $color-blue;
+}
