@@ -1,0 +1,15 @@
+.arrows__button {
+  margin: 0;
+  padding: 0 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrows__icon {
+  fill: none;
+}
+
+.arrows__icon--right {
+  transform: rotate(180deg);
+}
