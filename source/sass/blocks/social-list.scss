@@ -1,8 +1,30 @@
 .social-list {
   display: flex;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.social-list__item {
+  margin-left: 18px;
+}
+
+.social-list__link {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.social-list__link svg {
+  &:hover {
+    fill: $color-blue;
+    fill-opacity: 0.74;
+  }
+
+  &:active {
+    fill-opacity: 1;
+  }
 }
 
 .social-list__icon {

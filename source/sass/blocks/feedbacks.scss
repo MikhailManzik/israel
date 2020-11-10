@@ -1,3 +1,14 @@
+.feedbacks {
+  background-image: url("../img/bg-watercolor-comment-desktop@1x.png"), url("../img/bg-sketch-comment-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: contain, 523px 318px;
+  background-position: center right, right 64px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-watercolor-comment-desktop@2x.png"), url("../img/bg-sketch-comment-desktop@2x.png");
+  }
+}
+
 .feedbacks h2 {
   @include title-desktop;
   margin: 0;
@@ -6,7 +17,7 @@
 
 .feedbacks__wrapper {
   padding-left: 98px;
-  padding-right: 196px;
+  padding-right: 146px;
 }
 
 .feedbacks__list {
@@ -27,6 +38,7 @@
 
 .feedbacks__text h3 {
   margin: 0;
+  margin-bottom: 8px;
   font-family: $font-firasans;
   font-size: 24px;
   font-weight: 500;
@@ -38,23 +50,27 @@
 .feedbacks__program {
   display: flex;
   margin: 0;
+  margin-bottom: 32px;
   font-family: $font-firasans;
   font-size: 15px;
   line-height: 21px;
 }
 
-.feedbacks__program dt{
+.feedbacks__program dt {
   margin: 0;
+  margin-right: 8px;
   color: $color-blue;
 }
 
-.feedbacks__program dd{
+.feedbacks__program dd {
   margin: 0;
   color: $color-black;
   opacity: 0.74;
 }
 
 .feedbacks__text p {
+  margin: 0;
+  margin-bottom: 16px;
   font-family: $font-firasans;
   font-size: 17px;
   line-height: 28.9px;
@@ -63,8 +79,18 @@
 }
 
 .feedbacks__link {
+  display: block;
+  margin-bottom: 38px;
   font-family: $font-firasans;
   font-size: 15px;
   line-height: 21px;
   color: $color-blue;
+
+  &:hover {
+    opacity: 0.74;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
