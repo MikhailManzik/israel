@@ -122,17 +122,17 @@
 
 @media (max-width: $mobile-width) {
   .feedbacks {
-    background-image: url("../img/bg-watercolor-comment-desktop@1x.png"), url("../img/bg-sketch-comment-mobile@1x.png");
-    background-repeat: no-repeat;
+    background-image: url("../img/bg-watercolor-comment-mobile@1x.png"), url("../img/bg-sketch-comment-mobile@1x.png");
     background-size: contain, 288px 261px;
-    background-position: center right, right 578px;
+    background-position: 0 788px, right 578px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-watercolor-comment-desktop@2x.png"), url("../img/bg-sketch-comment-mobile@2x.png");
+      background-image: url("../img/bg-watercolor-comment-mobile@2x.png"), url("../img/bg-sketch-comment-mobile@2x.png");
     }
   }
 
   .feedbacks h2 {
+    @include title-mobile;
     margin-bottom: 24px;
   }
 
@@ -154,5 +154,25 @@
 
   .feedbacks__program {
     flex-direction: column;
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+
+  .feedbacks__text p {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+
+  .feedbacks__link {
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .feedbacks__controls {
+    top: 0;
+    bottom: auto;
+    width: 100%;
+    justify-content: center;
   }
 }

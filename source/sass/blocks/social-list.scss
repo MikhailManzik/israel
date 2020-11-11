@@ -30,3 +30,14 @@
 .social-list__icon {
   fill-opacity: 0.16;
 }
+
+@media (max-width: $mobile-width) {
+  .social-list {
+    justify-content: flex-start;
+  }
+
+  .social-list__item {
+    margin-left: 0;
+    margin-right: 18px;
+  }
+}
