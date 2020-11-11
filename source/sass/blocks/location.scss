@@ -1,0 +1,50 @@
+.location {
+  display: flex;
+  padding-left: 18px;
+}
+
+.location__caption {
+  position: relative;
+  margin-right: 16px;
+  font-family: $font-firasans;
+  font-size: 15px;
+  line-height: 22.5px;
+  color: $color-black;
+  opacity: 0.74;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: 12px;
+    height: 18px;
+    background-image: url("../img/marker.png");
+  }
+}
+
+.location__city {
+  position: relative;
+  margin-left: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: -22px;
+    width: 16px;
+    height: 15px;
+    background-image: url("../img/gps.png");
+  }
+}
+
+.location__link {
+  font-family: $font-firasans;
+  font-size: 15px;
+  line-height: 22.5px;
+  color: $color-black;
+  opacity: 0.74;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px dashed $color-blue;
+}

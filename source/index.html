@@ -732,18 +732,68 @@
         </ul>
       </div>
     </section>
-    <section class="details">
-      <div class="details__wrapper">
+    <section class="contacts">
+      <div class="contacts__wrapper">
         <h2>Узнать подробности</h2>
-        <div class="details__info">
-          <dl class="details__location">
-            <dt>Ваш город:</dt>
-            <dd><a href="#">Новосибирск</a></dd>
+        <div class="contacts__info">
+          <dl class="location">
+            <dt class="location__caption">Ваш город:</dt>
+            <dd class="location__city"><a class="location__link" href="#">Новосибирск</a></dd>
           </dl>
+          <div class="curator">
+            <picture>
+              <!-- 1х: 144px; 2x: 288px -->
+              <source type="image/webp" srcset="img/avatar-manager-desktop@1x.webp 1x, img/avatar-manager-desktop@2x.webp 2x">
+              <img src="img/avatar-manager-desktop@1x.jpg" srcset="img/avatar-manager-desktop@2x.jpg 2x"
+                width="144" height="172" alt="Фото девушки.">
+            </picture>
+            <div class="curator__info">
+              <dl class="curator__user">
+                <dt class="curator__title">Ваш куратор:</dt>
+                <dd class="curator__name"><a href="#">Анна Горелик</a></dd>
+              </dl>
+              <p class="curator__adress">Новосибирск, ул. Щетинкина&nbsp;68, культурный центр &laquo;Бейт Менахем&raquo;</p>
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="Мы в фейсбуке">
+                    <svg class="social-list__icon social-list__icon--facebook" width="24" height="24">
+                      <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="Мы в ватсап">
+                    <svg class="social-list__icon social-list__icon--whatsapp" width="24" height="24">
+                      <use xlink:href="img/sprite_auto.svg#icon-whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="Мы в телеграм">
+                    <svg class="social-list__icon social-list__icon--telegram" width="24" height="24">
+                      <use xlink:href="img/sprite_auto.svg#icon-telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="contacts__desc">
+            Куратор является опытным специалистом агентства Сохнут  и&nbsp;знает о&nbsp;проекте &laquo;Маса&raquo; всё! Свяжитесь с&nbsp;куратором, узнайте подробнее о&nbsp;программах и&nbsp;выберите свою !
+          </p>
         </div>
-        <div class="details__curator">
+        <picture>
+          <!-- 1х: 320px; 2x: 640px -->
+          <source type="image/webp" media="(max-width:767px)"
+          srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+          <!-- 1х: 702px; 2x: 1404px -->
+          <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+          <img src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x"
+            width="702" height="448" alt="Фото девушки.">
+        </picture>
+      </div>
+      <div class="contacts__callback">
 
-        </div>
       </div>
     </section>
   </div>

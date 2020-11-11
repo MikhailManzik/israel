@@ -1,6 +1,5 @@
 .social-list {
   display: flex;
-  justify-content: flex-end;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -32,10 +31,6 @@
 }
 
 @media (max-width: $mobile-width) {
-  .social-list {
-    justify-content: flex-start;
-  }
-
   .social-list__item {
     margin-left: 0;
     margin-right: 18px;

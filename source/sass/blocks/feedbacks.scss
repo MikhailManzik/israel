@@ -100,6 +100,10 @@
   }
 }
 
+.feedbacks__social-list {
+  justify-content: flex-end;
+}
+
 .feedbacks__controls {
   position: absolute;
   bottom: 0;
@@ -167,6 +171,10 @@
     margin-bottom: 22px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .feedbacks__social-list {
+    justify-content: flex-start;
   }
 
   .feedbacks__controls {
