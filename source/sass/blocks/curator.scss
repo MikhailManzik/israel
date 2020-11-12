@@ -1,0 +1,46 @@
+.curator {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.curator__title {
+  margin-right: 8px;
+  font-family: $font-firasans;
+  font-size: 15px;
+  line-height: 22.5px;
+  color: $color-blue;
+}
+
+.curator__name {
+  margin-left: 0;
+}
+
+.curator__link {
+  margin-right: 16px;
+  font-family: $font-firasans;
+  font-size: 15px;
+  line-height: 22.5px;
+  color: $color-black;
+  opacity: 0.74;
+  text-decoration: none;
+}
+
+.curator__info {
+  margin-left: 20px;
+}
+
+.curator__info p {
+  margin-bottom: 10px;
+  font-family: $font-firasans;
+  font-size: 13px;
+  line-height: 19.5px;
+  color: $color-black;
+  opacity: 0.74;
+  text-decoration: none;
+}
+
+.curator__user {
+  display: flex;
+  margin: 0;
+  margin-bottom: 12px;
+}

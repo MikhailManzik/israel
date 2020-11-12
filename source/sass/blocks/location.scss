@@ -1,5 +1,7 @@
 .location {
   display: flex;
+  margin: 0;
+  margin-bottom: 38px;
   padding-left: 18px;
 }
 
@@ -47,4 +49,12 @@
   text-transform: uppercase;
   text-decoration: none;
   border-bottom: 1px dashed $color-blue;
+
+  &:hover {
+    border-bottom-style: solid;
+  }
+
+  &:active {
+    border: none;
+  }
 }
