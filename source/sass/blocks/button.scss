@@ -1,0 +1,21 @@
+.button {
+  padding: 22px 33px;
+  color: $color-white;
+  font-family: $font-firasans;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20.4px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 80px;
+  background: $ln-gd-yellow;
+  cursor: pointer;
+
+  &:hover {
+    background: $ln-gd-yellow-hover;
+  }
+
+  &:active {
+    background: $ln-gd-yellow-click;
+  }
+}

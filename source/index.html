@@ -129,7 +129,7 @@
           <label>
             <input type="tel" name="phone" placeholder="Телефон" required>
           </label>
-          <button type="submit">Перезвонить мне</button>
+          <button class="button form__button" type="submit">Перезвоните мне</button>
         </div>
       </form>
       <picture>
@@ -250,7 +250,7 @@
       <div class="hashtag__text">
         <h2>#masaisrael</h2>
         <p>Познакомьтесь с&nbsp;программой от&nbsp;первого лица! Многие участники ведут блоги и&nbsp;фотодневники о жизни, учёбе и&nbsp;путешествиях в&nbsp;Израиле</p>
-        <a class="hashtag__button" href="#">
+        <a class="button hashtag__button" href="#">
           <svg class="hashtag__icon" width="24" height="24">
             <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
           </svg>
@@ -782,7 +782,7 @@
             </div>
           </div>
           <p>
-            Куратор является опытным специалистом агентства Сохнут и&nbsp;знает о&nbsp;проекте &laquo;Маса&raquo; всё! Свяжитесь с&nbsp;куратором,узнайте подробнее о&nbsp;программах и&nbsp;выберите свою !
+            Куратор является опытным специалистом агентства Сохнут и&nbsp;знает о&nbsp;проекте &laquo;Маса&raquo; всё! Свяжитесь с&nbsp;куратором, узнайте подробнее о&nbsp;программах и&nbsp;выберите свою !
           </p>
           </div>
           <div class="contacts__map">
@@ -803,7 +803,17 @@
             <p>Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!</p>
           </div>
           <div class="contacts__callback">
-
+            <form class="contacts__form form" action="https://echo.htmlacademy.ru" method="POST">
+              <div class="form__wrapper form__wrapper--display">
+                <label>
+                  <input type="text" name="name" placeholder="Имя" required>
+                </label>
+                <label>
+                  <input type="tel" name="phone" placeholder="Телефон" required>
+                </label>
+                <button class="button" type="submit">Перезвоните мне</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

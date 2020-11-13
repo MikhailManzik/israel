@@ -44,3 +44,17 @@
   margin: 0;
   margin-bottom: 12px;
 }
+
+@media (max-width: $mobile-width) {
+  .curator {
+    flex-direction: column;
+  }
+
+  .curator__avatar {
+    margin-bottom: 16px;
+  }
+
+  .curator__info {
+    margin-left: 0;
+  }
+}

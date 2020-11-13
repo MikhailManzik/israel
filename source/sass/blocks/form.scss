@@ -3,9 +3,13 @@
   width: 477px;
 }
 
+.form__wrapper--display {
+  display: flex;
+  width: 100%;
+}
+
 .form__wrapper input {
   box-sizing: border-box;
-
   width: 100%;
   padding: 20px;
   color: $color-black;
@@ -17,7 +21,7 @@
 
   &:focus {
     outline: 0;
-    border: 2px solid $color-black;
+    border: 2px solid $color-yellow;
   }
 
   &:focus:required:invalid {
@@ -25,34 +29,32 @@
   }
 }
 
-.form__wrapper button {
+.form__wrapper--display input {
+  width: 250px;
+  margin-right: 24px;
+}
+
+.form__button {
   position: absolute;
   right: 0;
-  padding: 22px 40px;
-  color: $color-white;
-  font-family: $font-firasans;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 20.4px;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 80px;
-  background: $ln-gd-yellow;
-  cursor: pointer;
+}
 
-  &:hover {
-    background: $ln-gd-yellow-hover;
-  }
-
-  &:active {
-    background: $ln-gd-yellow-click;
+@media (max-width: $tablet-width-960) {
+  .form__wrapper--display input {
+    width: 198px;
+    margin-right: 20px;
   }
 }
+
 
 @media (max-width: $mobile-width) {
   .form__wrapper {
     width: 100%;
     text-align: center;
+  }
+
+  .form__wrapper--display {
+    flex-direction: column;
   }
 
   .form__wrapper input {
@@ -61,6 +63,8 @@
 
   .form__wrapper button {
     position: static;
+    margin: 0 12px;
+    margin-top: 24px;
     padding-right: 64px;
     padding-left: 64px;
   }
