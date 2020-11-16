@@ -13,7 +13,7 @@
   <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/raleway-v18-latin_cyrillic-800.woff2" as="font" type="font/woff2" crossorigin="">
 </head>
-<body>
+<body class="no-scroll">
   <div class="wrapper">
     <section class="head">
     <h1 class="visually-hidden">Проект "Маса".</h1>
@@ -818,7 +818,90 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <div class="footer__logo">
+        <picture>
+          <!-- 1х: 120px; 2x: 240px -->
+          <source type="image/webp" media="(max-width:767px)"
+          srcset="img/logo-footer-mobile@1x.webp 1x, img/logo-footer-mobile@2x.webp 2x">
+          <!-- 1х: 137px; 2x: 274px -->
+          <source type="image/webp" srcset="img/logo-footer-desktop@1x.webp 1x, img/logo-footer-desktop@2x.webp 2x">
+          <img src="img/logo-footer-desktop@1x.png" srcset="img/logo-footer-desktop@2x.png 2x"
+            width="85" height="27" alt="Логотип компании, специализирующейся на учебных программах и стажировках в Израиле.">
+        </picture>
+        </div>
+        <div class="footer__copyright">
+        <p>Copyright someDesignCompany ©2019</p>
+        </div>
+        <div class="footer__social">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" aria-label="Мы в фейсбуке">
+              <svg class="social-list__icon social-list__icon--facebook" width="24" height="24">
+                <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" aria-label="Мы в твиттере">
+              <svg class="social-list__icon social-list__icon--twitter" width="24" height="24">
+                <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" aria-label="Мы в инстаграмме">
+              <svg class="social-list__icon social-list__icon--instagram" width="24" height="24">
+                <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </footer>
   </div>
+
+  <section class="popup popup--hidden">
+    <div class="popup__overlay"></div>
+    <div class="popup__content">
+      <h2>Заказать звонок</h2>
+      <p>Оставьте ваши контактные данные, мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течение рабочего дня и&nbsp;обязательно поможем найти ответ на&nbsp;ваш вопрос!</p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="form__wrapper form__wrapper--popup">
+        <label>
+          <input type="text" name="name" placeholder="Имя" required>
+        </label>
+        <label>
+          <input type="tel" name="phone" placeholder="Телефон" required>
+        </label>
+        <button class="button" type="submit">Перезвоните мне</button>
+        <div class="form__checkbox">
+          <label for="checkbox-personal-data">
+            <input type="checkbox" value="checked" id="checkbox-personal-data" checked required>
+            <span>Нажимая на&nbsp;кнопку, вы&nbsp;даёте согласие на&nbsp;обработку персональных данных</span>
+          </label>
+        </div>
+      </div>
+      </form>
+      <button class="popup__close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="popup popup-success">
+    <div class="popup__overlay"></div>
+    <div class="popup__content">
+      <h2>Заявка принята</h2>
+      <p>Мы&nbsp;приняли ваши данные и&nbsp;вскоре мы&nbsp;перезвоним вам для уточнения деталей!</p>
+      <button class="button popup-success__button" type="button">Понятно</button>
+      <button class="popup__close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+      </button>
+    </div>
+  </section>
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>

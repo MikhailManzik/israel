@@ -1,0 +1,36 @@
+.footer {
+  border-top: 1px solid $color-black;
+  border-color: rgba(72, 72, 72, 0.2);
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.footer__copyright p {
+  margin: 0;
+  font-family: $font-firasans;
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-black;
+  opacity: 0.5;
+}
+
+@media (max-width: $mobile-width) {
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+  }
+
+  .footer__logo {
+    margin-bottom: 24px;
+  }
+
+  .footer__copyright p {
+    margin-bottom: 28px;
+  }
+}
+

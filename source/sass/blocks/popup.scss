@@ -1,0 +1,136 @@
+.popup__overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ebebeb;
+  opacity: 0.95;
+}
+
+.popup__content {
+  position: fixed;
+  top: 123px;
+  left: 50%;
+  box-sizing: border-box;
+  width: 480px;
+  margin-left: -240px;
+  padding-top: 56px;
+  padding-left: 48px;
+  padding-right: 72px;
+  padding-bottom: 40px;
+  background-color: $color-white;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px -15px #484848;
+}
+
+.popup-success .popup__content {
+  padding-top: 216px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 112px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 205px;
+    width: 71px;
+    height: 64px;
+    background-image: url("../img/icon-check-mark.png");
+  }
+}
+
+.popup-success__button {
+  padding: 20px 96px;
+}
+
+.popup__content h2 {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: $font-firasans;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34.13px;
+  letter-spacing: -0.02em;
+  color: $color-blue;
+}
+
+.popup__content p {
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: $font-firasans;
+  font-size: 15px;
+  line-height: 25.5px;
+  color: $color-black;
+}
+
+
+.popup__close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  width: 18px;
+  height: 17px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popup__close::before,
+.popup__close::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  width: 19px;
+  height: 2px;
+
+  background: $ln-gd-yellow;
+}
+
+.popup__close::before {
+  transform: rotate(45deg);
+}
+
+.popup__close::after {
+  transform: rotate(-45deg);
+}
+
+.popup--hidden {
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .popup__content {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    padding: 0 16px;
+    padding-top: 169px;
+    text-align: center;
+  }
+
+  .popup-success .popup__content {
+    padding-top: 296px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 112px;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      width: 71px;
+      height: 64px;
+      margin-left: -35px;
+      background-image: url("../img/icon-check-mark.png");
+    }
+  }
+}
