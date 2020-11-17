@@ -24,8 +24,8 @@
     border: 2px solid $color-yellow;
   }
 
-  &:focus:required:invalid {
-    border: 2px solid $color-red;
+  &:focus:required:valid {
+    border: 2px solid $color-black;
   }
 }
 
@@ -87,6 +87,12 @@
     height: 14px;
     border: 2px solid $color-yellow;
     border-radius: 2px;
+  }
+}
+
+.form__checkbox--error span {
+  &::before {
+    border-color: red;
   }
 }
 

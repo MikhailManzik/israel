@@ -127,7 +127,7 @@
       <form class="callback__form form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="form__wrapper">
           <label>
-            <input type="tel" name="phone" placeholder="Телефон" required>
+            <input type="tel" name="phone" placeholder="Телефон" pattern="[0-9]{10,}" minlength="10" maxlength="13" required>
           </label>
           <button class="button form__button" type="submit">Перезвоните мне</button>
         </div>
@@ -806,10 +806,10 @@
             <form class="contacts__form form" action="https://echo.htmlacademy.ru" method="POST">
               <div class="form__wrapper form__wrapper--display">
                 <label>
-                  <input type="text" name="name" placeholder="Имя" required>
+                  <input type="text" name="name" placeholder="Имя" minlength="2" maxlength="25" required>
                 </label>
                 <label>
-                  <input type="tel" name="phone" placeholder="Телефон" required>
+                  <input type="tel" name="phone" placeholder="Телефон" pattern="[0-9]{10,}" minlength="10" maxlength="13" required>
                 </label>
                 <button class="button" type="submit">Перезвоните мне</button>
               </div>
@@ -871,15 +871,15 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
       <div class="form__wrapper form__wrapper--popup">
         <label>
-          <input type="text" name="name" placeholder="Имя" required>
+          <input id="name" type="text" name="name" placeholder="Имя" minlength="2" required>
         </label>
         <label>
-          <input type="tel" name="phone" placeholder="Телефон" required>
+          <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="[0-9]{10,}" minlength="10" maxlength="13" required>
         </label>
         <button class="button button--submit" type="submit">Перезвоните мне</button>
         <div class="form__checkbox">
-          <label for="checkbox-personal-data">
-            <input type="checkbox" value="checked" id="checkbox-personal-data" checked required>
+          <label for="checkbox">
+            <input id="checkbox" type="checkbox" value="checked"  required>
             <span>Нажимая на&nbsp;кнопку, вы&nbsp;даёте согласие на&nbsp;обработку персональных данных</span>
           </label>
         </div>
