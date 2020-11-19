@@ -19,7 +19,7 @@
   border: 2px solid #e3e3e3;
   border-radius: 80px;
 
-  &:focus {
+  &:focus:required {
     outline: 0;
     border: 2px solid $color-yellow;
   }
@@ -90,12 +90,6 @@
   }
 }
 
-.form__checkbox--error span {
-  &::before {
-    border-color: red;
-  }
-}
-
 .form__checkbox input:checked + span {
   &::after {
     content: "";
@@ -108,6 +102,16 @@
     border-left: 3px solid $color-yellow;
     transform: rotate(-50deg);
   }
+}
+
+.form__checkbox--error span {
+  &::before {
+    border-color: red;
+  }
+}
+
+.form__wrapper .error {
+  border: 2px solid red;
 }
 
 @media (max-width: $tablet-width-960) {

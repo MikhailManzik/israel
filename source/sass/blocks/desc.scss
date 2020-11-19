@@ -4,6 +4,14 @@
   list-style: none;
 }
 
+.desc__pane {
+  display: none;
+}
+
+.desc__pane--active {
+  display: block;
+}
+
 .desc__pane h3 {
   margin: 0;
   margin-top: 16px;
