@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 400px;
-  padding-bottom: 154px;
+  padding-top: 423px;
+  padding-bottom: 136px;
 }
 
 .intro p {
-  width: 434px;
+  width: 375px;
+  margin: 0;
+  margin-bottom: 33px;
   color: $color-white;
   font-family: $font-firasans;
   font-size: 24px;

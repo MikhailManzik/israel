@@ -1,8 +1,11 @@
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 32px 0;
+}
+
+.header__logo img {
+  margin-left: 360px;
 }
 
 .header__phone,
@@ -27,6 +30,8 @@
 }
 
 .header__callback {
+  margin-left: auto;
+  font-size: 14px;
   border-bottom: 1px dashed $color-black;
 }
 

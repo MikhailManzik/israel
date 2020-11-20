@@ -1,12 +1,12 @@
 .programs {
   position: relative;
-  margin-bottom: 240px;
+  margin-bottom: 226px;
 
   &::before {
     content: "";
     position: absolute;
     right: 0;
-    top: -78px;
+    top: -51px;
     width: 680px;
     height: 420px;
     background-image: url("../img/bg-sketch-programs-desktop@1x.png");
@@ -22,13 +22,13 @@
 
 .programs__wrapper {
   padding-left: 212px;
-  padding-right: 270px;
+  padding-right: 312px;
 }
 
 .programs h2 {
   @include title-desktop;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 65px;
 }
 
 .programs__tabs {
