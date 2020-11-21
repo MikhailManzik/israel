@@ -1,5 +1,8 @@
 .hashtag {
   display: flex;
+  justify-content: flex-end;
+  padding-top: 123px;
+  padding-right: 177px;
   padding-bottom: 196px;
   background-image: url("../img/people1-desktop@1x.png");
   background-repeat: no-repeat;
@@ -10,11 +13,11 @@
   }
 }
 
-.hashtag__text {
-  margin-left: auto;
-  margin-right: 167px;
-  margin-top: 120px;
-}
+// .hashtag__text {
+//   margin-left: auto;
+//   margin-right: 167px;
+//   margin-top: 120px;
+// }
 
 .hashtag__text h2 {
   @include title-desktop;
@@ -38,8 +41,10 @@
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
-  padding: 22px 40px;
-  padding-left: 72px;
+  padding-top: 22px;
+  padding-right: 27px;
+  padding-bottom: 18px;
+  padding-left: 69px;
   color: $color-white;
   font-family: $font-firasans;
   font-size: 17px;
@@ -63,8 +68,8 @@
 
 .hashtag__icon {
   position: absolute;
-  top: 20px;
-  left: 40px;
+  top: 18px;
+  left: 37px;
   fill: $color-white;
 }
 

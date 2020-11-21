@@ -1,9 +1,9 @@
 .advantages {
   margin-top: -150px;
-  padding-bottom: 160px;
+  padding-bottom: 155px;
   background-image: url("../img/bg-watercolor-life-desktop@1x.png"), url("../img/compass-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 -35px, right 618px;
+  background-position: 0 -44px, right 618px;
   background-size: contain, 90px 148px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -14,7 +14,7 @@
 .advantages__wrapper {
   max-width: 1152px;
   margin: 0 auto;
-  padding-left: 113px;
+  padding-left: 97px;
   padding-right: 104px;
 }
 
@@ -25,13 +25,14 @@
 .advantages__text h2 {
   @include title-desktop;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .advantages__text p {
   margin: 0;
-  margin-bottom: 48px;
-  padding: 0 215px;
+  margin-bottom: 47px;
+  padding-left: 214px;
+  padding-right: 219px;
   font-family: $font-firasans;
   font-size: 17px;
   line-height: 28.9px;

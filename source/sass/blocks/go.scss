@@ -1,7 +1,7 @@
 .go {
   position: relative;
-  padding-top: 289px;
-  padding-bottom: 320px;
+  padding-top: 291px;
+  padding-bottom: 308px;
   text-align: center;
   background-image: url("../img/bg-watercolor-how-to-go-desktop@1x.png"), url("../img/stamp-desktop@1x.png");
   background-repeat: no-repeat, no-repeat;
@@ -40,7 +40,7 @@
 
 .go__text p {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
   padding-right: 44px;
   color: $color-black;
   font-family: $font-firasans;
@@ -50,6 +50,7 @@
 }
 
 .go__request p {
+  margin-bottom: 25px;
   padding-right: 70px;
   font-size: 17px;
   font-weight: 500;
@@ -63,7 +64,7 @@
   &::before {
     content: "";
     position: absolute;
-    left: 0;
+    left: -2px;
     width: 4px;
     height: 100%;
     background: $ln-gd-yellow;
@@ -73,6 +74,7 @@
 .go__note p {
   padding-left: 17px;
   padding-right: 0;
+  line-height: 21px;
   opacity: 0.5;
 }
 

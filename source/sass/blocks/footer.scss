@@ -6,16 +6,23 @@
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 24px 0;
 }
 
 .footer__copyright p {
   margin: 0;
+  margin-left: 34px;
   font-family: $font-firasans;
   font-size: 12px;
   line-height: 18px;
   color: $color-black;
   opacity: 0.5;
+}
+
+.footer__social {
+  align-self: baseline;
+  margin-right: -5px;
 }
 
 @media (max-width: $mobile-width) {

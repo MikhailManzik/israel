@@ -11,7 +11,7 @@
 
 .cards__photo--big {
   width: 482px;
-  margin-top: -65px;
+  margin-top: -67px;
   margin-right: 15px;
 }
 
@@ -36,17 +36,18 @@
 
 .cards__photo:nth-child(4) {
   left: 496px;
+  bottom: -1px;
 }
 
 .cards__photo:nth-child(5) {
-  right: 0;
+  right: 2px;
   margin-right: 0;
 }
 
 .cards__desc {
   position: absolute;
   left: 32px;
-  bottom: 32px;
+  bottom: 37px;
   width: 360px;
   color: $color-white;
   font-family: $font-raleway;
@@ -60,12 +61,14 @@
 }
 
 .cards__desc--middle {
-  bottom: 35px;
+  left: 33px;
+  bottom: 36px;
   width: 360px;
 }
 
 .cards__desc--small {
-  bottom: 35px;
+  left: 24px;
+  bottom: 36px;
   width: 120px;
 }
 

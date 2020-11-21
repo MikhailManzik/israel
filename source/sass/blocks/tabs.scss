@@ -1,15 +1,16 @@
 .tabs__list {
   margin: 0;
   padding: 0;
-  padding-right: 92px;
+  padding-right: 93px;
   list-style: none;
 }
 
 .tabs__button {
   position: relative;
   width: 198px;
-  padding: 27px 0;
-  padding-left: 70px;
+  padding-top: 25px;
+  padding-bottom: 31px;
+  padding-left: 71px;
   padding-right: 40px;
   background-color: transparent;
   text-align: left;
@@ -64,7 +65,7 @@
 
 .tabs__button--study {
   &::before {
-    top: 17px;
+    top: 15px;
     left: 18px;
     width: 36px;
     height: 35px;
@@ -107,7 +108,7 @@
 
 .tabs__button--volonteur {
   &::before {
-    top: 24px;
+    top: 19px;
     width: 32px;
     height: 29px;
     background-image: url("../img/icon-volonteur-black@1x.png");
@@ -128,8 +129,8 @@
 
 .tabs__button--religion {
   &::before {
-    left: 24px;
-    top: 25px;
+    left: 25px;
+    top: 19px;
     width: 23px;
     height: 25px;
     background-image: url("../img/icon-religion-black@1x.png");

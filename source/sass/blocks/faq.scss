@@ -1,10 +1,10 @@
 .faq {
   padding-top: 136px;
-  padding-bottom: 128px;
+  padding-bottom: 124px;
   background-image: url("../img/bg-watercolor-questions-desktop@1x.png"), url("../img/bag-desktop@1x.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: 0 50px, left 882px;
-  background-size: cover, 153px 157px;
+  background-position: 0 56px, left 863px;
+  background-size: cover, 153px 174px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-watercolor-questions-desktop@2x.png"), url("../img/bag-desktop@2x.png");
@@ -35,8 +35,9 @@
 
 .faq__item {
   position: relative;
-  padding: 32px 0;
-  padding-right: 70px;
+  padding-top: 38px;
+  padding-bottom: 32px;
+  padding-right: 80px;
   border-bottom: 1px solid rgba(72, 72, 72, 0.2);
   cursor: pointer;
 
@@ -46,7 +47,7 @@
     z-index: 1;
     position: absolute;
     display: table;
-    top: 18px;
+    top: 24px;
     left: 0;
     font-family: $font-firasans;
     font-size: 28px;
@@ -56,10 +57,33 @@
   }
 }
 
+.faq__item--one {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &::before {
+    top: 22px;
+  }
+}
+
+.faq__item--two {
+  &::before {
+    top: 22px;
+  }
+}
+
+.faq__item--five {
+  padding-bottom: 23px;
+}
+
+.faq__item--six {
+  padding-bottom: 23px;
+}
+
 .faq__item h3 {
   margin: 0;
-  padding-left: 25px;
-  padding-right: 158px;
+  padding-left: 29px;
+  padding-right: 74px;
   font-family: $font-firasans;
   font-size: 17px;
   font-weight: 400;
@@ -81,8 +105,8 @@
 
 .faq__arrow {
   position: absolute;
-  top: 40px;
-  right: 50px;
+  top: 38px;
+  right: 40px;
 }
 
 .faq__arrow-img {

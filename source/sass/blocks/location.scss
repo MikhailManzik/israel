@@ -2,7 +2,7 @@
   display: flex;
   margin: 0;
   margin-bottom: 38px;
-  padding-left: 18px;
+  padding-left: 22px;
 }
 
 .location__caption {
@@ -17,7 +17,7 @@
   &::before {
     content: "";
     position: absolute;
-    left: -20px;
+    left: -18px;
     width: 12px;
     height: 18px;
     background-image: url("../img/marker.png");
@@ -41,8 +41,8 @@
 
 .location__link {
   font-family: $font-firasans;
-  font-size: 15px;
-  line-height: 22.5px;
+  font-size: 14px;
+  line-height: 25.5px;
   color: $color-black;
   opacity: 0.74;
   font-weight: 500;

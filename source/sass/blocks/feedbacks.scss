@@ -2,7 +2,7 @@
   background-image: url("../img/bg-watercolor-comment-desktop@1x.png"), url("../img/bg-sketch-comment-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: contain, 523px 318px;
-  background-position: center right, right 64px;
+  background-position: center right, right 55px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-watercolor-comment-desktop@2x.png"), url("../img/bg-sketch-comment-desktop@2x.png");
@@ -12,6 +12,7 @@
 .feedbacks h2 {
   @include title-desktop;
   margin: 0;
+  padding-bottom: 9px;
   text-align: center;
 }
 
@@ -38,7 +39,7 @@
   position: relative;
   width: 60%;
   margin-left: 40px;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .feedbacks__text h3 {
@@ -75,7 +76,7 @@
 
 .feedbacks__text p {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 21px;
   font-family: $font-firasans;
   font-size: 17px;
   line-height: 28.9px;
@@ -85,9 +86,9 @@
 
 .feedbacks__link {
   display: block;
-  margin-bottom: 38px;
+  margin-bottom: 58px;
   font-family: $font-firasans;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 21px;
   color: $color-blue;
 
@@ -100,13 +101,14 @@
   }
 }
 
-.feedbacks__social-list {
+.feedbacks .social-list {
   justify-content: flex-end;
+  margin-right: -15px;
 }
 
 .feedbacks__controls {
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
   display: flex;
   align-items: flex-end;
 }
