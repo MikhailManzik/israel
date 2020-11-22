@@ -139,7 +139,7 @@
 
   .feedbacks h2 {
     @include title-mobile;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
   }
 
   .feedbacks__wrapper {
@@ -152,19 +152,27 @@
     text-align: center;
   }
 
+  .feedbacks__item img {
+    width: 240px;
+    margin-bottom: 5px;
+  }
+
   .feedbacks__text {
     width: 100%;
+    padding-top: 49px;
     margin-left: 0;
     text-align: left;
   }
 
   .feedbacks__program {
     flex-direction: column;
+    margin-bottom: 25px;
     font-size: 14px;
     line-height: 22.4px;
   }
 
   .feedbacks__text p {
+    margin-bottom: 28px;
     font-size: 16px;
     line-height: 25.6px;
   }
@@ -175,8 +183,10 @@
     line-height: 24px;
   }
 
-  .feedbacks__social-list {
+  .feedbacks .social-list {
     justify-content: flex-start;
+    margin-right: 0;
+    margin-left: -5px;
   }
 
   .feedbacks__controls {

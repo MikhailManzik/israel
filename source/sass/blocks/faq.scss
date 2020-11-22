@@ -142,7 +142,7 @@
 
 @media (max-width: $mobile-width) {
   .faq {
-    padding-top: 80px;
+    padding-top: 59px;
     padding-bottom: 80px;
     background-image: none, url("../img/bag-desktop@1x.png");
     background-size: 146px 177px;
@@ -159,20 +159,54 @@
 
   .faq__questions h2 {
     @include title-mobile;
+    margin-bottom: 7px;
     text-align: center;
   }
 
   .faq__item {
-    padding-right: 30px;
+    padding-right: 25px;
+    padding-bottom: 14px;
+  }
+
+  .faq__item--one {
+    padding-top: 32px;
+    padding-bottom: 17px;
+
+    &::before {
+      top: 17px;
+    }
+  }
+
+  .faq__item--two {
+    padding-bottom: 24px;
+
+    &::before {
+      top: 22px;
+    }
+  }
+
+  .faq__item--four {
+    padding-bottom: 23px;
+  }
+
+  .faq__item--five {
+    padding-bottom: 18px;
+  }
+
+  .faq__item--six {
+    padding-top: 36px;
+    padding-bottom: 21px;
   }
 
   .faq__item h3 {
+    padding-left: 25px;
     padding-right: 0;
     font-size: 16px;
     line-height: 25.6px;
   }
 
   .faq__item p {
+    margin-top: 19px;
     font-size: 14px;
     line-height: 22.4px;
   }

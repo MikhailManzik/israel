@@ -1,11 +1,12 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 32px 0;
 }
 
-.header__logo img {
-  margin-left: 360px;
+.header__logo {
+  margin-right: 22px;
 }
 
 .header__phone,
@@ -30,18 +31,20 @@
 }
 
 .header__callback {
-  margin-left: auto;
   font-size: 14px;
   border-bottom: 1px dashed $color-black;
 }
 
 @media (max-width: $mobile-width) {
   .header {
+    position: relative;
     flex-direction: column;
+    margin-right: -8px;
+    padding-top: 21px;
   }
 
   .header__phone {
-    margin-bottom: 4px;
+    margin-bottom: 9px;
   }
 
   .header__phone,
@@ -51,7 +54,19 @@
     line-height: 16.8px;
   }
 
+  .header__callback {
+    font-size: 13px;
+  }
+
   .header__logo {
-    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 120px;
+    height: 42px;
+  }
+
+  .header__logo img {
+    margin-left: 0;
   }
 }

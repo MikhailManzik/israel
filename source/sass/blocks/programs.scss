@@ -53,10 +53,10 @@
 @media (max-width: $mobile-width) {
   .programs {
     overflow: hidden;
-    margin-bottom: 80px;
+    margin-bottom: 66px;
 
     &::before {
-      top: 170px;
+      top: 118px;
       width: 296px;
       height: 201px;
       background-image: url("../img/bg-sketch-programs-mobile@1x.png");
@@ -74,6 +74,7 @@
 
   .programs h2 {
     @include title-mobile;
+    margin-bottom: 16px;
     text-align: center;
   }
 

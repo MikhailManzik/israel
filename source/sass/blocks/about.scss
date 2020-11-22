@@ -18,11 +18,13 @@
 }
 
 .about__text p {
+  width: 720px;
   margin: 0;
   font-family: $font-firasans;
   font-size: 17px;
   line-height: 29.9px;
   font-weight: 400;
+  text-align: center;
 }
 
 .about__video {
@@ -34,7 +36,8 @@
 
 .about__video svg {
   position: absolute;
-  top: 179px;
+  top: 50%;
+  margin-top: -52px;
   cursor: pointer;
   transition: 1s;
 
@@ -45,9 +48,10 @@
 
 @media (max-width: $mobile-width) {
   .about {
+    margin-bottom: 76px;
     background-image: url("../img/bg-watercolor-about-programm-mobile@1x.png");
     background-repeat: no-repeat;
-    background-position: center 208px;
+    background-position: center 223px;
     background-size: contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -56,8 +60,10 @@
   }
 
   .about__text {
+    padding-top: 26px;
     padding-left: 16px;
     padding-right: 16px;
+    padding-bottom: 29px;
   }
 
   .about__text h2 {
@@ -65,7 +71,15 @@
   }
 
   .about__text p {
+    width: 100%;
     font-size: 16px;
     line-height: 25.6px;
+    text-align: left;
+  }
+
+  .about__video svg {
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
   }
 }

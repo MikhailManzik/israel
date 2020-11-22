@@ -4,7 +4,7 @@
   background-image: url("../img/bg-watercolor-details-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -8px 14px;
+  background-position: 0 14px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-watercolor-details-desktop@2x.png");
@@ -117,6 +117,8 @@
 
 @media (max-width: $mobile-width) {
   .contacts {
+    padding-top: 78px;
+    padding-bottom: 64px;
     background-image: none;
   }
 
@@ -132,11 +134,12 @@
   .contacts h2 {
     @include title-mobile;
     margin-bottom: 24px;
+    text-align: center;
   }
 
   .contacts__top {
     flex-direction: column;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
   }
 
   .contacts__info {
@@ -144,7 +147,9 @@
   }
 
   .contacts__info p {
-    margin-bottom: 40px;
+    margin-bottom: 46px;
+    font-size: 16px;
+    line-height: 25.6px;
   }
 
   .contacts__map {
@@ -152,5 +157,19 @@
     margin-top: 0;
     text-align: center;
     margin-right: -16px;
+  }
+
+  .contacts__desc {
+    margin-bottom: 39px;
+  }
+
+  .contacts__desc b {
+    margin-bottom: 11px;
+  }
+
+  .form__wrapper--display button {
+    margin-top: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }

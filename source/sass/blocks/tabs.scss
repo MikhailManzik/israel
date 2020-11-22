@@ -241,7 +241,24 @@
     margin-right: -16px;
   }
 
+  .tabs__button {
+    width: 182px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 52px;
+
+    &::before {
+      left: 12px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
   .tabs__button--active {
+    width: 182px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 52px;
     border-radius: 50px;
 
     &::after {
@@ -251,5 +268,36 @@
 
   .tabs__button:not(.tabs__button--active) {
     opacity: 0.5;
+  }
+
+  .tabs__button--culture {
+    &::before {
+
+      top: 10px;
+    }
+  }
+
+  .tabs__button--study {
+    &::before {
+      top: 10px;
+    }
+  }
+
+  .tabs__button--business {
+    &::before {
+      top: 12px;
+    }
+  }
+
+  .tabs__button--volonteur {
+    &::before {
+      top: 10px;
+    }
+  }
+
+  .tabs__button--religion {
+    &::before {
+      top: 10px;
+    }
   }
 }

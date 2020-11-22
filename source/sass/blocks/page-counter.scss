@@ -6,3 +6,9 @@
   color: $color-black;
   opacity: 0.5;
 }
+
+@media (max-width: $mobile-width) {
+  .page-counter {
+    margin-right: 5px;
+  }
+}

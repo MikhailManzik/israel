@@ -11,6 +11,10 @@
   color: $color-blue;
 }
 
+.curator__avatar {
+  width: 125px;
+}
+
 .curator__name {
   margin-left: 0;
 }
@@ -26,10 +30,11 @@
 }
 
 .curator__info {
-  margin-left: 25px;
+  margin-left: 12px;
 }
 
 .curator__info p {
+  width: 220px;
   margin-bottom: 11px;
   font-family: $font-firasans;
   font-size: 13px;
@@ -48,13 +53,18 @@
 @media (max-width: $mobile-width) {
   .curator {
     flex-direction: column;
+    margin-bottom: 38px;
   }
 
   .curator__avatar {
-    margin-bottom: 16px;
+    margin-bottom: 11px;
   }
 
   .curator__info {
     margin-left: 0;
+  }
+
+  .curator__info p {
+    width: 100%;
   }
 }

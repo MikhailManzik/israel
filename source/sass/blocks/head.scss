@@ -14,7 +14,8 @@
   .head {
     min-height: 605px;
     background-image: url("../img/bg-head-mobile@1x.png");
-    background-size: contain;
+    background-size: cover;
+    background-position-y: 30px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-head-mobile@2x.png");

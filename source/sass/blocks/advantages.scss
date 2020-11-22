@@ -66,9 +66,18 @@
     max-width: 640px;
   }
 
+  .advantages__text h2 {
+    margin-bottom: 21px;
+    font-size: 32px;
+    line-height: 40.76px;
+  }
+
   .advantages__text p {
     padding: 0;
+    padding-right: 31px;
     font-size: 15px;
+    line-height: 26.6px;
+    text-align: left;
   }
 }
 
@@ -76,7 +85,7 @@
   .advantages {
     margin-top: 0;
     background: none;
-    padding-bottom: 60px;
+    padding-bottom: 47px;
   }
 
   .advantages__text {

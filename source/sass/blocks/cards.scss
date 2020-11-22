@@ -147,13 +147,17 @@
 
 @media (max-width: $mobile-width) {
   .cards {
-    margin-bottom: 55px;
+    margin-bottom: 40px;
   }
 
   .cards__photo {
     width: 100%;
     margin-right: 0;
     text-align: center;
+  }
+
+  .cards__photo--big {
+    margin-top: -22px;
   }
 
   .cards__photo--hidden {
@@ -169,7 +173,7 @@
     display: block;
     max-width: 225px;
     margin: 0 auto;
-    margin-top: -94px;
+    margin-top: -91px;
     text-align: center;
     font-size: 18px;
     line-height: 21px;

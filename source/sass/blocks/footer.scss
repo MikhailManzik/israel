@@ -25,6 +25,12 @@
   margin-right: -5px;
 }
 
+@media (max-width: $desktop-width-1280) {
+  .footer__social {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .footer__wrapper {
     flex-direction: column;
@@ -33,11 +39,32 @@
   }
 
   .footer__logo {
-    margin-bottom: 24px;
+    margin-bottom: 19px;
+  }
+
+  .footer__logo img {
+    width: 99px;
+    height: 31px;
   }
 
   .footer__copyright p {
+    margin-left: 0;
     margin-bottom: 28px;
   }
-}
 
+  .footer__social {
+    align-self: center;
+    margin-right: 0;
+    margin-left: 9px;
+  }
+
+  .footer__social svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer__link-social {
+    width: 32px;
+    height: 32px;
+  }
+}
