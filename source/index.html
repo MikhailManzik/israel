@@ -174,8 +174,9 @@
         <h2>Жизнь в&nbsp;израиле</h2>
         <p>Помимо учёбы, в&nbsp;рамках программе у&nbsp;вас будет возможность путешествовать по&nbsp;стране и познакомиться с&nbsp;богатой культурно-исторической жизнью Израиля и&nbsp;его жителей.</p>
       </div>
-      <div class="advantages__cards cards">
-        <div class="cards__photo cards__photo--big cards__photo--hidden cards__photo--active">
+      <div class="swiper-container advantages__cards cards">
+        <div class="swiper-wrapper cards__wrapper">
+          <div class="swiper-slide cards__photo cards__photo--big">
             <picture>
               <!-- 1х: 288px; 2x: 576px -->
               <source type="image/webp" media="(max-width:767px)"
@@ -186,8 +187,8 @@
                 width="482" height="732" alt="Здание мечети с людми около неё.">
             </picture>
             <span class="cards__desc cards__desc--big">Экскурсии по Израилю<br> и знакомство с его историей</span>
-        </div>
-        <div class="cards__photo cards__photo--small cards__photo--hidden">
+          </div>
+          <div class="swiper-slide cards__photo cards__photo--small">
           <picture>
             <!-- 1х: 288px; 2x: 576px -->
             <source type="image/webp" media="(max-width:767px)"
@@ -198,8 +199,8 @@
               width="211" height="318" alt="Парень в наушниках перед ноутбуком.">
           </picture>
           <span class="cards__desc cards__desc--small">Изучение иврита</span>
-        </div>
-        <div class="cards__photo cards__photo--middle cards__photo--hidden">
+          </div>
+          <div class="swiper-slide cards__photo cards__photo--middle">
           <picture>
             <!-- 1х: 288px; 2x: 576px -->
             <source type="image/webp" media="(max-width:767px)"
@@ -210,8 +211,8 @@
               width="411" height="318" alt="Преподаватель и студент.">
           </picture>
           <span class="cards__desc cards__desc--middle">Обучение современным навыкам и&nbsp;профессиям</span>
-        </div>
-        <div class="cards__photo cards__photo--middle cards__photo--hidden">
+          </div>
+          <div class="swiper-slide cards__photo cards__photo--middle">
           <picture>
             <!-- 1х: 288px; 2x: 576px -->
             <source type="image/webp" media="(max-width:767px)"
@@ -222,8 +223,8 @@
               width="411" height="828" alt="Cтуденты.">
           </picture>
           <span class="cards__desc cards__desc--middle">Совместные творческие проекты с&nbsp;израильской молодёжью</span>
-        </div>
-        <div class="cards__photo cards__photo--small cards__photo--hidden">
+          </div>
+          <div class="swiper-slide cards__photo cards__photo--small">
           <picture>
             <!-- 1х: 288px; 2x: 576px -->
             <source type="image/webp" media="(max-width:767px)"
@@ -234,14 +235,10 @@
               width="214" height="318" alt="Cтуденты.">
           </picture>
           <span class="cards__desc cards__desc--small">Развитие лидерства</span>
+          </div>
         </div>
-      </div>
-      <div class="advantages__buttons-slider buttons-slider">
-        <button class="buttons-slider__item buttons-slider__item--active"></button>
-        <button class="buttons-slider__item"></button>
-        <button class="buttons-slider__item"></button>
-        <button class="buttons-slider__item"></button>
-        <button class="buttons-slider__item"></button>
+        <div class="swiper-pagination advantages__buttons-slider buttons-slider">
+        </div>
       </div>
     </div>
     </section>
@@ -330,18 +327,20 @@
     </section>
     <section class="feedbacks">
       <h2>Отзывы</h2>
-      <div class="feedbacks__wrapper">
-        <ul class="feedbacks__list">
-          <li class="feedbacks__item">
-            <picture>
-              <!-- 1х: 240px; 2x: 480px -->
-              <source type="image/webp" media="(max-width:767px)"
-              srcset="img/avatar-comment-mobile@1x.webp 1x, img/avatar-comment-mobile@2x.webp 2x">
-              <!-- 1х: 364px; 2x: 728px -->
-              <source type="image/webp" srcset="img/avatar-comment-desktop@1x.webp 1x, img/avatar-comment-desktop@2x.webp 2x">
-              <img src="img/avatar-comment-desktop@1x.png" srcset="img/avatar-comment-desktop@2x.png 2x"
-                width="364" height="380" alt="Фото девушки.">
-            </picture>
+      <div class="swiper-container feedbacks__wrapper">
+        <ul class="swiper-wrapper feedbacks__list">
+          <li class="swiper-slide feedbacks__item">
+            <div class="feedbacks__avatar">
+              <picture>
+                <!-- 1х: 240px; 2x: 480px -->
+                <source type="image/webp" media="(max-width:767px)"
+                srcset="img/avatar-comment-mobile@1x.webp 1x, img/avatar-comment-mobile@2x.webp 2x">
+                <!-- 1х: 364px; 2x: 728px -->
+                <source type="image/webp" srcset="img/avatar-comment-desktop@1x.webp 1x, img/avatar-comment-desktop@2x.webp 2x">
+                <img src="img/avatar-comment-desktop@1x.png" srcset="img/avatar-comment-desktop@2x.png 2x"
+                  width="364" height="380" alt="Фото девушки.">
+              </picture>
+            </div>
             <div class="feedbacks__text">
               <h3>Ольга Михайлова</h3>
               <dl class="feedbacks__program">
@@ -374,41 +373,22 @@
                   </a>
                 </li>
               </ul>
-              <div class="feedbacks__controls">
-                <div class="page-counter">
-                  <span>3</span>
-                  <span>/</span>
-                  <span>6</span>
-                </div>
-                <div class="arrows">
-                  <button class="arrows__button">
-                    <svg class="arrows__icon arrows__icon--left" width="11" height="18">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-                    </svg>
-                    <span class="visually-hidden">Стрелка влево</span>
-                  </button>
-                  <button class="arrows__button">
-                    <svg class="arrows__icon arrows__icon--right" width="11" height="18">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-                    </svg>
-                    <span class="visually-hidden">Стрелка вправо</span>
-                  </button>
-                </div>
-              </div>
             </div>
           </li>
-          <li class="feedbacks__item">
-            <picture>
-              <!-- 1х: 240px; 2x: 480px -->
-              <source type="image/webp" media="(max-width:767px)"
-              srcset="img/avatar-comment-mobile@1x.webp 1x, img/avatar-comment-mobile@2x.webp 2x">
-              <!-- 1х: 364px; 2x: 728px -->
-              <source type="image/webp" srcset="img/avatar-comment-desktop@1x.webp 1x, img/avatar-comment-desktop@2x.webp 2x">
-              <img src="img/avatar-comment-desktop@1x.png" srcset="img/avatar-comment-desktop@2x.png 2x"
-                width="364" height="380" alt="Фото девушки.">
-            </picture>
+          <li class="swiper-slide feedbacks__item">
+            <div class="feedbacks__avatar">
+              <picture>
+                <!-- 1х: 240px; 2x: 480px -->
+                <source type="image/webp" media="(max-width:767px)"
+                srcset="img/avatar-comment-mobile@1x.webp 1x, img/avatar-comment-mobile@2x.webp 2x">
+                <!-- 1х: 364px; 2x: 728px -->
+                <source type="image/webp" srcset="img/avatar-comment-desktop@1x.webp 1x, img/avatar-comment-desktop@2x.webp 2x">
+                <img src="img/avatar-comment-desktop@1x.png" srcset="img/avatar-comment-desktop@2x.png 2x"
+                  width="364" height="380" alt="Фото девушки.">
+              </picture>
+            </div>
             <div class="feedbacks__text">
-              <h3>Ольга Михайлова</h3>
+              <h3>Лариса Михайлова</h3>
               <dl class="feedbacks__program">
                 <dt>Программа:</dt>
                 <dd>Арт-Тель, февраль-сетнябрь 2017</dd>
@@ -439,41 +419,22 @@
                   </a>
                 </li>
               </ul>
-              <div class="feedbacks__controls">
-                <div class="page-counter">
-                  <span>3</span>
-                  <span>/</span>
-                  <span>6</span>
-                </div>
-                <div class="arrows">
-                  <button class="arrows__button">
-                    <svg class="arrows__icon arrows__icon--left" width="11" height="18">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-                    </svg>
-                    <span class="visually-hidden">Стрелка влево</span>
-                  </button>
-                  <button class="arrows__button">
-                    <svg class="arrows__icon arrows__icon--right" width="11" height="18">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-                    </svg>
-                    <span class="visually-hidden">Стрелка вправо</span>
-                  </button>
-                </div>
-              </div>
             </div>
           </li>
-          <li class="feedbacks__item feedbacks__item--active">
-            <picture>
-              <!-- 1х: 240px; 2x: 480px -->
-              <source type="image/webp" media="(max-width:767px)"
-              srcset="img/avatar-comment-mobile@1x.webp 1x, img/avatar-comment-mobile@2x.webp 2x">
-              <!-- 1х: 364px; 2x: 728px -->
-              <source type="image/webp" srcset="img/avatar-comment-desktop@1x.webp 1x, img/avatar-comment-desktop@2x.webp 2x">
-              <img src="img/avatar-comment-desktop@1x.png" srcset="img/avatar-comment-desktop@2x.png 2x"
-                width="364" height="380" alt="Фото девушки.">
-            </picture>
+          <li class="swiper-slide feedbacks__item">
+            <div class="feedbacks__avatar">
+              <picture>
+                <!-- 1х: 240px; 2x: 480px -->
+                <source type="image/webp" media="(max-width:767px)"
+                srcset="img/avatar-comment-mobile@1x.webp 1x, img/avatar-comment-mobile@2x.webp 2x">
+                <!-- 1х: 364px; 2x: 728px -->
+                <source type="image/webp" srcset="img/avatar-comment-desktop@1x.webp 1x, img/avatar-comment-desktop@2x.webp 2x">
+                <img src="img/avatar-comment-desktop@1x.png" srcset="img/avatar-comment-desktop@2x.png 2x"
+                  width="364" height="380" alt="Фото девушки.">
+              </picture>
+            </div>
             <div class="feedbacks__text">
-              <h3>Ольга Михайлова</h3>
+              <h3>Мария Михайлова</h3>
               <dl class="feedbacks__program">
                 <dt>Программа:</dt>
                 <dd>Арт-Тель, февраль-сетнябрь 2017</dd>
@@ -504,41 +465,22 @@
                   </a>
                 </li>
               </ul>
-              <div class="feedbacks__controls">
-                <div class="page-counter">
-                  <span>3</span>
-                  <span>/</span>
-                  <span>6</span>
-                </div>
-                <div class="arrows">
-                  <button class="arrows__button">
-                    <svg class="arrows__icon arrows__icon--left" width="11" height="18">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-                    </svg>
-                    <span class="visually-hidden">Стрелка влево</span>
-                  </button>
-                  <button class="arrows__button">
-                    <svg class="arrows__icon arrows__icon--right" width="11" height="18">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-                    </svg>
-                    <span class="visually-hidden">Стрелка вправо</span>
-                  </button>
-                </div>
-              </div>
             </div>
           </li>
-          <li class="feedbacks__item">
-            <picture>
-              <!-- 1х: 240px; 2x: 480px -->
-              <source type="image/webp" media="(max-width:767px)"
-              srcset="img/avatar-comment-mobile@1x.webp 1x, img/avatar-comment-mobile@2x.webp 2x">
-              <!-- 1х: 364px; 2x: 728px -->
-              <source type="image/webp" srcset="img/avatar-comment-desktop@1x.webp 1x, img/avatar-comment-desktop@2x.webp 2x">
-              <img src="img/avatar-comment-desktop@1x.png" srcset="img/avatar-comment-desktop@2x.png 2x"
-                width="364" height="380" alt="Фото девушки.">
-            </picture>
+          <li class="swiper-slide feedbacks__item">
+            <div class="feedbacks__avatar">
+              <picture>
+                <!-- 1х: 240px; 2x: 480px -->
+                <source type="image/webp" media="(max-width:767px)"
+                srcset="img/avatar-comment-mobile@1x.webp 1x, img/avatar-comment-mobile@2x.webp 2x">
+                <!-- 1х: 364px; 2x: 728px -->
+                <source type="image/webp" srcset="img/avatar-comment-desktop@1x.webp 1x, img/avatar-comment-desktop@2x.webp 2x">
+                <img src="img/avatar-comment-desktop@1x.png" srcset="img/avatar-comment-desktop@2x.png 2x"
+                  width="364" height="380" alt="Фото девушки.">
+              </picture>
+            </div>
             <div class="feedbacks__text">
-              <h3>Ольга Михайлова</h3>
+              <h3>Наталья Михайлова</h3>
               <dl class="feedbacks__program">
                 <dt>Программа:</dt>
                 <dd>Арт-Тель, февраль-сетнябрь 2017</dd>
@@ -569,41 +511,22 @@
                   </a>
                 </li>
               </ul>
-              <div class="feedbacks__controls">
-                <div class="page-counter">
-                  <span>3</span>
-                  <span>/</span>
-                  <span>6</span>
-                </div>
-                <div class="arrows">
-                  <button class="arrows__button">
-                    <svg class="arrows__icon arrows__icon--left" width="11" height="18">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-                    </svg>
-                    <span class="visually-hidden">Стрелка влево</span>
-                  </button>
-                  <button class="arrows__button">
-                    <svg class="arrows__icon arrows__icon--right" width="11" height="18">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-                    </svg>
-                    <span class="visually-hidden">Стрелка вправо</span>
-                  </button>
-                </div>
-              </div>
             </div>
           </li>
-          <li class="feedbacks__item">
-            <picture>
-              <!-- 1х: 240px; 2x: 480px -->
-              <source type="image/webp" media="(max-width:767px)"
-              srcset="img/avatar-comment-mobile@1x.webp 1x, img/avatar-comment-mobile@2x.webp 2x">
-              <!-- 1х: 364px; 2x: 728px -->
-              <source type="image/webp" srcset="img/avatar-comment-desktop@1x.webp 1x, img/avatar-comment-desktop@2x.webp 2x">
-              <img src="img/avatar-comment-desktop@1x.png" srcset="img/avatar-comment-desktop@2x.png 2x"
-                width="364" height="380" alt="Фото девушки.">
-            </picture>
+          <li class="swiper-slide feedbacks__item">
+            <div class="feedbacks__avatar">
+              <picture>
+                <!-- 1х: 240px; 2x: 480px -->
+                <source type="image/webp" media="(max-width:767px)"
+                srcset="img/avatar-comment-mobile@1x.webp 1x, img/avatar-comment-mobile@2x.webp 2x">
+                <!-- 1х: 364px; 2x: 728px -->
+                <source type="image/webp" srcset="img/avatar-comment-desktop@1x.webp 1x, img/avatar-comment-desktop@2x.webp 2x">
+                <img src="img/avatar-comment-desktop@1x.png" srcset="img/avatar-comment-desktop@2x.png 2x"
+                  width="364" height="380" alt="Фото девушки.">
+              </picture>
+            </div>
             <div class="feedbacks__text">
-              <h3>Ольга Михайлова</h3>
+              <h3>Ирина Михайлова</h3>
               <dl class="feedbacks__program">
                 <dt>Программа:</dt>
                 <dd>Арт-Тель, февраль-сетнябрь 2017</dd>
@@ -634,41 +557,22 @@
                   </a>
                 </li>
               </ul>
-              <div class="feedbacks__controls">
-                <div class="page-counter">
-                  <span>3</span>
-                  <span>/</span>
-                  <span>6</span>
-                </div>
-                <div class="arrows">
-                  <button class="arrows__button">
-                    <svg class="arrows__icon arrows__icon--left" width="11" height="18">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-                    </svg>
-                    <span class="visually-hidden">Стрелка влево</span>
-                  </button>
-                  <button class="arrows__button">
-                    <svg class="arrows__icon arrows__icon--right" width="11" height="18">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-                    </svg>
-                    <span class="visually-hidden">Стрелка вправо</span>
-                  </button>
-                </div>
-              </div>
             </div>
           </li>
-          <li class="feedbacks__item">
-            <picture>
-              <!-- 1х: 240px; 2x: 480px -->
-              <source type="image/webp" media="(max-width:767px)"
-              srcset="img/avatar-comment-mobile@1x.webp 1x, img/avatar-comment-mobile@2x.webp 2x">
-              <!-- 1х: 364px; 2x: 728px -->
-              <source type="image/webp" srcset="img/avatar-comment-desktop@1x.webp 1x, img/avatar-comment-desktop@2x.webp 2x">
-              <img src="img/avatar-comment-desktop@1x.png" srcset="img/avatar-comment-desktop@2x.png 2x"
-                width="364" height="380" alt="Фото девушки.">
-            </picture>
+          <li class="swiper-slide feedbacks__item">
+            <div class="feedbacks__avatar">
+              <picture>
+                <!-- 1х: 240px; 2x: 480px -->
+                <source type="image/webp" media="(max-width:767px)"
+                srcset="img/avatar-comment-mobile@1x.webp 1x, img/avatar-comment-mobile@2x.webp 2x">
+                <!-- 1х: 364px; 2x: 728px -->
+                <source type="image/webp" srcset="img/avatar-comment-desktop@1x.webp 1x, img/avatar-comment-desktop@2x.webp 2x">
+                <img src="img/avatar-comment-desktop@1x.png" srcset="img/avatar-comment-desktop@2x.png 2x"
+                  width="364" height="380" alt="Фото девушки.">
+              </picture>
+            </div>
             <div class="feedbacks__text">
-              <h3>Ольга Михайлова</h3>
+              <h3>Оксана Михайлова</h3>
               <dl class="feedbacks__program">
                 <dt>Программа:</dt>
                 <dd>Арт-Тель, февраль-сетнябрь 2017</dd>
@@ -699,30 +603,26 @@
                   </a>
                 </li>
               </ul>
-              <div class="feedbacks__controls">
-                <div class="page-counter">
-                  <span>3</span>
-                  <span>/</span>
-                  <span>6</span>
-                </div>
-                <div class="arrows">
-                  <button class="arrows__button">
-                    <svg class="arrows__icon arrows__icon--left" width="11" height="18">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-                    </svg>
-                    <span class="visually-hidden">Стрелка влево</span>
-                  </button>
-                  <button class="arrows__button">
-                    <svg class="arrows__icon arrows__icon--right" width="11" height="18">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-                    </svg>
-                    <span class="visually-hidden">Стрелка вправо</span>
-                  </button>
-                </div>
-              </div>
             </div>
           </li>
         </ul>
+        <div class="feedbacks__controls">
+          <div class="swiper-pagination page-counter"></div>
+          <div class="arrows">
+            <button class="swiper-button-prev arrows__button">
+              <svg class="arrows__icon arrows__icon--left" width="11" height="18">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
+              </svg>
+              <span class="visually-hidden">Стрелка влево</span>
+            </button>
+            <button class="swiper-button-next arrows__button">
+              <svg class="arrows__icon arrows__icon--right" width="11" height="18">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
+              </svg>
+              <span class="visually-hidden">Стрелка вправо</span>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
     <section class="contacts">

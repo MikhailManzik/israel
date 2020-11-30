@@ -95,14 +95,15 @@
 
   .hashtag__text h2 {
     @include title-mobile;
-    margin-bottom: 102px;
-    font-size: 38px;
+    margin-bottom: 96px;
+    font-size: 40px;
+    line-height: 49px;
   }
 
   .hashtag__text p {
     width: 100%;
-    margin-bottom: 61px;
-    padding-left: 7px;
+    margin-bottom: 86px;
+    padding-left: 14px;
     font-size: 16px;
     line-height: 25.6px;
     text-align: left;

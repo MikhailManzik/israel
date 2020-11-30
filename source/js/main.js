@@ -155,3 +155,60 @@
   switchTabs(tabsProgramsItems);
   switchTabsAccordion(tabsFaqItems);
 })();
+
+
+var advantagesSlider = document.querySelector('.advantages__cards');
+var breakpoint = window.matchMedia('(min-width:767px)');
+var swiper;
+
+var activateSlider = function () {
+  if (breakpoint.matches) {
+    if (swiper) {
+      swiper.destroy(true, true);
+    }
+    return;
+  } else if (!breakpoint.matches) {
+    showSliderAdvantagesSection();
+  }
+};
+
+var showSliderAdvantagesSection = function () {
+  if (advantagesSlider) {
+    swiper = new window.Swiper(advantagesSlider, {
+
+      loop: true,
+
+      pagination: {
+        el: '.buttons-slider',
+        clickable: true,
+      },
+
+      breakpoints: {
+        767: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        }
+      }
+    });
+  }
+};
+
+breakpoint.addListener(activateSlider);
+activateSlider();
+
+var feedbacksSlider = document.querySelector('.feedbacks__wrapper');
+
+if (feedbacksSlider) {
+  feedbacksSlider = new window.Swiper(feedbacksSlider, {
+    loop: true,
+
+    pagination: {
+      el: '.page-counter',
+      type: 'fraction',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+}

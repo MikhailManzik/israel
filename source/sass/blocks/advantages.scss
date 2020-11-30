@@ -85,11 +85,15 @@
   .advantages {
     margin-top: 0;
     background: none;
-    padding-bottom: 47px;
+    padding-bottom: 38px;
   }
 
   .advantages__text {
     left: 0;
     right: 0;
+  }
+
+  .advantages__text p {
+    margin-bottom: 24px;
   }
 }

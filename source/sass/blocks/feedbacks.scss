@@ -17,22 +17,23 @@
 }
 
 .feedbacks__wrapper {
-  padding-left: 98px;
-  padding-right: 146px;
+  overflow: hidden;
+  position: relative;
+  max-width: 1122px;
+  margin-left: 98px;
 }
 
 .feedbacks__list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .feedbacks__item {
-  display: none;
-}
-
-.feedbacks__item--active {
   display: flex;
+  flex-shrink: 0;
+  width: 100%;
 }
 
 .feedbacks__text {
@@ -86,6 +87,7 @@
 
 .feedbacks__link {
   display: block;
+  width: 150px;
   margin-bottom: 58px;
   font-family: $font-firasans;
   font-size: 17px;
@@ -108,26 +110,49 @@
 
 .feedbacks__controls {
   position: absolute;
+  left: 404px;
   bottom: 4px;
   display: flex;
   align-items: flex-end;
 }
 
+@media (max-width: $desktop-width-1280) {
+  .feedbacks__text {
+    width: 50%;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .feedbacks__wrapper {
-    padding-right: 98px;
+    max-width: 832px;
+    padding-right: 0;
   }
 }
 
 @media (max-width: $tablet-width-960) {
   .feedbacks__wrapper {
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .feedbacks__avatar {
+    width: 270px;
+  }
+
+  .feedbacks__controls {
+    left: 308px;
+  }
+}
+
+@media (max-width: $tablet-width-800) {
+  .feedbacks__wrapper {
+    margin-left: 65px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .feedbacks {
+    position: relative;
     background-image: url("../img/bg-watercolor-comment-mobile@1x.png"), url("../img/bg-sketch-comment-mobile@1x.png");
     background-size: contain, 288px 261px;
     background-position: 0 788px, right 578px;
@@ -143,14 +168,21 @@
   }
 
   .feedbacks__wrapper {
-    padding-left: 16px;
-    padding-right: 16px;
+    position: static;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .feedbacks__item {
     flex-direction: column;
     text-align: center;
   }
+
+  .feedbacks__avatar {
+    width: 100%;
+}
 
   .feedbacks__item img {
     width: 240px;
@@ -190,9 +222,10 @@
   }
 
   .feedbacks__controls {
-    top: 0;
+    top: 393px;
     bottom: auto;
-    width: 100%;
-    justify-content: center;
+    left: 50%;
+    width: auto;
+    margin-left: -38px;
   }
 }

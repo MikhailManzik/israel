@@ -1,4 +1,4 @@
-.cards {
+.cards__wrapper {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -147,25 +147,37 @@
 
 @media (max-width: $mobile-width) {
   .cards {
+    overflow: hidden;
     margin-bottom: 40px;
   }
 
+  .cards__wrapper {
+    flex-wrap: nowrap;
+    min-height: 417px;
+  }
+
   .cards__photo {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
     width: 100%;
     margin-right: 0;
     text-align: center;
   }
 
   .cards__photo--big {
-    margin-top: -22px;
+    margin-top: 0;
   }
 
-  .cards__photo--hidden {
-    display: none;
+  .cards__photo:nth-child(4),
+  .cards__photo:nth-child(5) {
+    position: static;
   }
 
-  .cards__photo--active {
-    display: block;
+  .cards__photo img {
+    width: 100%;
+    height: auto;
+
   }
 
   .cards__desc {
@@ -174,6 +186,7 @@
     max-width: 225px;
     margin: 0 auto;
     margin-top: -91px;
+    margin-bottom: 41px;
     text-align: center;
     font-size: 18px;
     line-height: 21px;
