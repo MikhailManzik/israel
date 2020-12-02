@@ -39,9 +39,10 @@
 @media (max-width: $mobile-width) {
   .callback {
     padding: 0;
+    padding-top: 65px;
     background-image: url("../img/bg-backpack-mobile@1x.png");
     background-size: 103px;
-    background-position: 0 -49px;
+    background-position: 0 17px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-backpack-mobile@2x.png");
