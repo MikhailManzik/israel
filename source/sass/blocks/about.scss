@@ -3,6 +3,14 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 198px;
+  background-image: url("../img/bg-watercolor-about-programm-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 145px;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-watercolor-about-programm-desktop@2x.png");
+  }
 }
 
 .about__text {
@@ -37,7 +45,9 @@
 .about__video svg {
   position: absolute;
   top: 50%;
+  left: 50%;
   margin-top: -52px;
+  margin-left: -48px;
   cursor: pointer;
   transition: 1s;
 
@@ -80,6 +90,7 @@
   .about__video svg {
     width: 80px;
     height: 80px;
-    margin-top: -40px;
+    margin-top: -35px;
+    margin-left: -40px;
   }
 }

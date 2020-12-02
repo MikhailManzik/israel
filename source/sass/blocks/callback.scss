@@ -1,20 +1,13 @@
 .callback {
   position: relative;
   padding: 0 210px;
+  background-image: url("../img/bg-backpack-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 147px;
+  background-position: 0 -76px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -76px;
-    width: 147px;
-    height: 262px;
-    background-image: url("../img/bg-backpack-desktop@1x.png");
-    background-size: contain;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-backpack-desktop@2x.png");
-    }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-backpack-desktop@2x.png");
   }
 }
 
@@ -44,16 +37,12 @@
 @media (max-width: $mobile-width) {
   .callback {
     padding: 0;
+    background-image: url("../img/bg-backpack-mobile@1x.png");
+    background-size: 103px;
+    background-position: 0 -49px;
 
-    &::before {
-      top: -48px;
-      width: 103px;
-      height: 188px;
-      background-image: url("../img/bg-backpack-mobile@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/bg-backpack-mobile@2x.png");
-      }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-backpack-mobile@2x.png");
     }
   }
 

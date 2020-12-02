@@ -155,7 +155,7 @@
     position: relative;
     background-image: url("../img/bg-watercolor-comment-mobile@1x.png"), url("../img/bg-sketch-comment-mobile@1x.png");
     background-size: contain, 288px 261px;
-    background-position: 0 788px, right 578px;
+    background-position: 0 788px, right 525px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-watercolor-comment-mobile@2x.png"), url("../img/bg-sketch-comment-mobile@2x.png");
@@ -182,7 +182,7 @@
 
   .feedbacks__avatar {
     width: 100%;
-}
+  }
 
   .feedbacks__item img {
     width: 240px;
