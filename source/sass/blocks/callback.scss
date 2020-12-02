@@ -1,10 +1,12 @@
 .callback {
   position: relative;
   padding: 0 210px;
+  padding-top: 219px;
+  padding-bottom: 148px;
   background-image: url("../img/bg-backpack-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 147px;
-  background-position: 0 -76px;
+  background-position: 0 143px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-backpack-desktop@2x.png");
@@ -30,7 +32,7 @@
 .callback__wrapper img {
   z-index: -1;
   position: absolute;
-  top: -212px;
+  top: 8px;
   right: 0;
 }
 
