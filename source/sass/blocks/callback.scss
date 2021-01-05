@@ -1,8 +1,9 @@
 .callback {
   position: relative;
-  padding: 0 210px;
   padding-top: 219px;
   padding-bottom: 148px;
+  padding-left: 208px;
+  padding-right: 0;
   background-image: url("../img/bg-backpack-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 147px;
@@ -11,6 +12,13 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-backpack-desktop@2x.png");
   }
+}
+
+.callback__wrapper  {
+  position: relative;
+  display: flex;
+  max-width: 1154px;
+  margin: 0 auto;
 }
 
 .callback__wrapper h2 {
@@ -29,11 +37,19 @@
   line-height: 28.9px;
 }
 
-.callback__wrapper img {
-  z-index: -1;
+.callback__img {
   position: absolute;
-  top: 8px;
   right: 0;
+  bottom: -136px;
+  z-index: -1;
+  width: 100%;
+  text-align: right;
+}
+
+@media (max-width: $desktop-width-1280) {
+  .callback__img {
+    width: 80%;
+  }
 }
 
 @media (max-width: $mobile-width) {

@@ -14,20 +14,22 @@
 }
 
 .go__wrapper {
+  max-width: 1223px;
+  margin-left: 0;
   display: flex;
   padding-left: 12px;
   padding-right: 35px;
 }
 
 .go__wrapper picture {
-  width: 45%;
+  width: 50%;
   text-align: left;
 }
 
 .go__text {
-  width: 40%;
+  width: 45%;
   margin: 0;
-  margin-left: 93px;
+  margin-left: 90px;
   text-align: left;
 }
 
@@ -41,7 +43,7 @@
 .go__text p {
   margin: 0;
   margin-bottom: 33px;
-  padding-right: 44px;
+  padding-right: 50px;
   color: $color-black;
   font-family: $font-firasans;
   font-size: 15px;
@@ -51,7 +53,7 @@
 
 .go__request p {
   margin-bottom: 25px;
-  padding-right: 70px;
+  padding-right: 75px;
   font-size: 17px;
   font-weight: 500;
   line-height: 28.9px;
@@ -76,6 +78,16 @@
   padding-right: 0;
   line-height: 21px;
   opacity: 0.5;
+}
+
+@media (min-width: $desktop-width-1370) {
+  .go {
+    background-size: 100% 1208px, 216px 254px;
+  }
+
+  .go__wrapper {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: $tablet-width) {

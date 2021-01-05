@@ -1,19 +1,16 @@
 .programs {
   position: relative;
   padding-top: 107px;
+  padding-left: 211px;
+  padding-right: 312px;
   background-image: url("../img/bg-sketch-programs-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: 686px 58px;
+  background-position: right 58px;
   background-size: 680px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-sketch-programs-desktop@2x.png");
   }
-}
-
-.programs__wrapper {
-  padding-left: 211px;
-  padding-right: 312px;
 }
 
 .programs h2 {
@@ -26,16 +23,22 @@
   display: flex;
 }
 
+@media (max-width: $desktop-width-1280) {
+  .programs {
+    padding-right: 211px;
+  }
+}
+
 
 @media (max-width: $desktop-width-1125) {
-  .programs__wrapper {
+  .programs {
     padding-left: 112px;
     padding-right: 112px;
   }
 }
 
 @media (max-width: $tablet-width-960) {
-  .programs__wrapper {
+  .programs {
     padding-left: 65px;
     padding-right: 65px;
   }
@@ -45,6 +48,8 @@
   .programs {
     overflow: hidden;
     padding-top: 36px;
+    padding-left: 16px;
+    padding-right: 16px;
     background-image: url("../img/bg-sketch-programs-mobile@1x.png");
     background-position: right 117px;
     background-size: 296px;
@@ -52,11 +57,6 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-sketch-programs-mobile@2x.png");
     }
-  }
-
-  .programs__wrapper {
-    padding-left: 16px;
-    padding-right: 16px;
   }
 
   .programs h2 {

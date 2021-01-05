@@ -13,6 +13,7 @@
 
 .faq__wrapper {
   display: flex;
+  max-width: 1256px;
   padding-left: 110px;
 }
 
@@ -126,6 +127,16 @@
   text-align: right;
 }
 
+@media (min-width: $desktop-width-1370) {
+  .faq {
+    background-size: 100% 1119px, 153px 174px;
+  }
+
+  .faq__wrapper {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: $desktop-width-1280) {
   .faq {
     background-position: 0 50px, left 730px;
@@ -146,7 +157,7 @@
     padding-bottom: 80px;
     background-image: none, url("../img/bag-desktop@1x.png");
     background-size: 146px 177px;
-    background-position: -4px 719px;
+    background-position: -4px 550px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: none, url("../img/bag-desktop@2x.png");
@@ -213,5 +224,11 @@
 
   .faq__arrow {
     right: 0;
+  }
+}
+
+@media (max-width: $mobile-width-400) {
+  .faq {
+    background-position: -4px 719px;
   }
 }

@@ -2,7 +2,6 @@
   display: flex;
   justify-content: flex-end;
   padding-top: 123px;
-  padding-right: 177px;
   padding-bottom: 196px;
   background-image: url("../img/people1-desktop@1x.png");
   background-repeat: no-repeat;
@@ -11,6 +10,14 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/people1-desktop@2x.png");
   }
+}
+
+.hashtag__container  {
+  max-width: 1008px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
 }
 
 .hashtag__text h2 {

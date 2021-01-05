@@ -6,7 +6,7 @@
   background-image: url("../img/bg-watercolor-about-programm-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: center 160px;
-  background-size: contain;
+  background-size: 100% 604px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-watercolor-about-programm-desktop@2x.png");
@@ -53,6 +53,18 @@
 
   &:hover {
     transform: scale(1.1);
+  }
+}
+
+@media (min-width: $desktop-width-1370) {
+  .about__container {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: $desktop-width-1364) {
+  .about {
+    background-size: contain;
   }
 }
 
