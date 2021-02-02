@@ -1,32 +1,37 @@
 .hashtag {
   display: flex;
   justify-content: flex-end;
-  padding-top: 123px;
-  padding-bottom: 196px;
-  background-image: url("../img/people1-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/people1-desktop@2x.png");
-  }
 }
 
 .hashtag__container  {
-  max-width: 1008px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   margin: 0 auto;
+  padding-top: 123px;
+  padding-bottom: 196px;
+  padding-right: calc(100% - (100% - 178px));
+  background-color: #EEE2D3;
+  background-image: url("../img/people1-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/people1-desktop@2x.jpg");
+  }
 }
 
-.hashtag__text h2 {
+.hashtag__content {
+  max-width: 1008px;
+}
+
+.hashtag__content h2 {
   @include title-desktop;
   margin: 0;
   margin-bottom: 24px;
 }
 
-.hashtag__text p {
+.hashtag__content p {
   width: 390px;
   margin: 0;
   margin-bottom: 48px;
@@ -75,8 +80,8 @@
 }
 
 @media (max-width: $tablet-width) {
-  .hashtag__text {
-    margin-right: 70px;
+  .hashtag__container {
+    padding-right: calc(100% - (100% - 96px));
   }
 }
 
@@ -85,29 +90,29 @@
     padding-top: 0;
     padding-right: 0;
     padding-bottom: 20px;
-    background-image: url("../img/people1-mobile@1x.png");
+  }
+
+  .hashtag__content {
+    max-width: 100%;
+    margin: 0 16px;
+    background-image: url("../img/people1-mobile@1x.jpg");
     background-size: 100%;
     background-position: 0 40px;
+    text-align: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/people1-mobile@2x.png");
+      background-image: url("../img/people1-mobile@2x.jpg");
     }
   }
 
-  .hashtag__text {
-    max-width: 100%;
-    margin: 0 16px;
-    text-align: center;
-  }
-
-  .hashtag__text h2 {
+  .hashtag__content h2 {
     @include title-mobile;
     margin-bottom: 96px;
     font-size: 40px;
     line-height: 49px;
   }
 
-  .hashtag__text p {
+  .hashtag__content p {
     width: 100%;
     margin-bottom: 86px;
     padding-left: 14px;

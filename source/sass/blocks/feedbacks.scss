@@ -1,7 +1,7 @@
 .feedbacks {
   background-image: url("../img/bg-watercolor-comment-desktop@1x.png"), url("../img/bg-sketch-comment-desktop@1x.png");
   background-repeat: no-repeat;
-  background-size: contain, 523px 318px;
+  background-size: cover, 523px 318px;
   background-position: center right, right 55px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -115,6 +115,14 @@
   display: flex;
   align-items: flex-end;
 }
+
+@media (min-width: $desktop-width-1370) {
+  .feedbacks__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 @media (max-width: $desktop-width-1280) {
   .feedbacks__text {

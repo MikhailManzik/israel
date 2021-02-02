@@ -6,7 +6,7 @@
   background-image: url("../img/bg-watercolor-how-to-go-desktop@1x.png"), url("../img/stamp-desktop@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 0 -57px, right 354px;
-  background-size: 1366px, 216px 254px;
+  background-size: 100%, 216px 254px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-watercolor-how-to-go-desktop@2x.png"), url("../img/stamp-desktop@2x.png");
@@ -81,10 +81,6 @@
 }
 
 @media (min-width: $desktop-width-1370) {
-  .go {
-    background-size: 100% 1208px, 216px 254px;
-  }
-
   .go__wrapper {
     margin: 0 auto;
   }

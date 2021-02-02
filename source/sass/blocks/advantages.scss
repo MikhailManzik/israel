@@ -4,7 +4,7 @@
   background-image: url("../img/bg-watercolor-life-desktop@1x.png"), url("../img/compass-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: 0 -44px, right 612px;
-  background-size: contain, 90px 148px;
+  background-size: 100%, 90px 148px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-watercolor-life-desktop@2x.png"), url("../img/compass-desktop@2x.png");
