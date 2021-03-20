@@ -22,3 +22,9 @@
     background: $ln-gd-yellow-click;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .button {
+    width: 264px;
+  }
+}

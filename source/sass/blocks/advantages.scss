@@ -1,6 +1,6 @@
 .advantages {
   margin-top: 78px;
-  padding-bottom: 155px;
+  padding-bottom: 156px;
   background-image: url("../img/bg-watercolor-life-desktop@1x.png"), url("../img/compass-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: 0 -44px, right 612px;
@@ -95,5 +95,11 @@
 
   .advantages__text p {
     margin-bottom: 24px;
+  }
+}
+
+@media (max-width: $mobile-width-320) {
+  .advantages {
+    padding-bottom: 80px;
   }
 }

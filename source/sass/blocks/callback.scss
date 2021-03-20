@@ -14,7 +14,7 @@
   }
 }
 
-.callback__wrapper  {
+.callback__wrapper {
   position: relative;
   display: flex;
   max-width: 1154px;
@@ -65,6 +65,10 @@
     }
   }
 
+  .callback__wrapper {
+    flex-direction: column;
+  }
+
   .callback__wrapper h2 {
     @include title-mobile;
     text-align: center;
@@ -79,7 +83,8 @@
     line-height: 25.6px;
   }
 
-  .callback__wrapper img {
+  .callback__img {
     position: static;
+    width: 100%;
   }
 }

@@ -1,6 +1,7 @@
 .head {
+  padding: 0 16px;
   text-align: center;
-  background-color: #EEE2D3;
+  background-color: #eee2d3;
   background-image: url("../img/bg-head-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
@@ -14,11 +15,31 @@
 @media (max-width: $mobile-width) {
   .head {
     min-height: 605px;
+    padding: 0;
     background-image: url("../img/bg-head-mobile@1x.jpg");
     background-size: cover;
+    background-position-y: -260px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-head-mobile@2x.jpg");
     }
+  }
+}
+
+@media (max-width: $mobile-width-680) {
+  .head {
+    background-position-y: -190px;
+  }
+}
+
+@media (max-width: $mobile-width-580) {
+  .head {
+    background-position-y: -110px;
+  }
+}
+
+@media (max-width: $mobile-width-400) {
+  .head {
+    background-position-y: 0;
   }
 }
