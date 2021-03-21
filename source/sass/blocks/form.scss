@@ -24,12 +24,12 @@
   border: 2px solid #e3e3e3;
   border-radius: 80px;
 
-  &:focus:required {
+  &:focus {
     outline: 0;
     border: 2px solid $color-yellow;
   }
 
-  &:focus:required:valid {
+  &:valid {
     border: 2px solid $color-black;
   }
 }
