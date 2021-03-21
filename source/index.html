@@ -157,8 +157,7 @@
           <form class="callback__form form" action="https://echo.htmlacademy.ru" method="POST">
             <div class="form__wrapper">
               <label>
-                <input type="tel" name="phone" placeholder="Телефон" pattern="[0-9]{10,}" minlength="10" maxlength="13"
-                  required>
+                <input class="form__input-phone" type="tel" name="phone" placeholder="Телефон" pattern="\+7 \(\d{3}\) \d{3} \d{2} \d{2}" required>
               </label>
               <button class="button form__button" type="submit">Перезвоните мне</button>
             </div>
@@ -799,11 +798,10 @@
             <form class="contacts__form form" action="https://echo.htmlacademy.ru" method="POST">
               <div class="form__wrapper form__wrapper--display">
                 <label>
-                  <input type="text" name="name" placeholder="Имя" minlength="2" maxlength="25" required>
+                  <input class="form__input-name" type="text" name="name" placeholder="Имя" minlength="2" maxlength="25" required>
                 </label>
                 <label>
-                  <input type="tel" name="phone" placeholder="Телефон" pattern="[0-9]{10,}" minlength="10"
-                    maxlength="13" required>
+                  <input class="form__input-phone" type="tel" name="phone" placeholder="Телефон" pattern="\+7 \(\d{3}\) \d{3} \d{2} \d{2}" required>
                 </label>
                 <button class="button contacts__button" type="submit">Перезвоните мне</button>
               </div>
@@ -866,11 +864,10 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="form__wrapper form__wrapper--popup">
           <label>
-            <input id="name" type="text" name="name" placeholder="Имя" minlength="2" required>
+            <input class="form__input form__input-name" id="name" type="text" name="name" placeholder="Имя" minlength="2" maxlength="30" required>
           </label>
           <label>
-            <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="[0-9]{13,}" minlength="10"
-              maxlength="16" required>
+            <input class="form__input form__input-phone" type="tel" name="phone" placeholder="Телефон" pattern="\+7 \(\d{3}\) \d{3} \d{2} \d{2}" required>
           </label>
           <button class="button button--submit" type="submit">Перезвоните мне</button>
           <div class="form__checkbox">
