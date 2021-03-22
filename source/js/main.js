@@ -139,7 +139,7 @@
         } else if (phone.validity.valueMissing) {
           phone.setCustomValidity('Обязательное поле');
         } else if (phone.validity.patternMismatch) {
-          phone.setCustomValidity('Ведите только цифры');
+          phone.setCustomValidity('Введите только цифры');
         } else {
           phone.setCustomValidity('');
         }
@@ -199,8 +199,14 @@
     });
   }
 
-  validateNames();
-  validatePhones();
+  var clearInputs = function (inputs) {
+    forEach.call(inputs, function (input) {
+      input.classList.remove('error');
+    });
+  };
+
+  switchTabs(tabsProgramsItems);
+  switchTabsAccordion(tabsFaqItems);
   addPhoneMask();
   buttonOpenPopup.addEventListener('click', onOpenPopupClick);
   document.addEventListener('keydown', onClosePopupPress);
@@ -209,18 +215,16 @@
   addHandler(allOverlayPopups);
   buttonSubmit.addEventListener('click', addColorErrorChceckbox);
   checkboxBlock.addEventListener('input', removeColorErrorChceckbox);
+  validateNames();
+  validatePhones();
 
   forEach.call(allForm, function (form) {
     form.addEventListener('submit', function (evt) {
-      validateNames();
-      validatePhones();
       evt.preventDefault();
       showPopupSuccess();
       form.reset();
+      clearInputs(inputsName);
+      clearInputs(inputsPhone);
     });
   });
-
-  switchTabs(tabsProgramsItems);
-  switchTabsAccordion(tabsFaqItems);
-
 })();
