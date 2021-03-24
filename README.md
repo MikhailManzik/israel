@@ -4,5 +4,5 @@
 
 [Опубликованная версия](https://mikhailmanzik.github.io/israel/).
 
-![Image of project «Israel»](https://github.com/MikhailManzik/antarctic/blob/master/israel.jpg)
+![Image of project «Israel»](https://github.com/MikhailManzik/israel/blob/master/israel.jpg)
 
